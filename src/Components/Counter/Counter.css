@@ -1,0 +1,55 @@
+.counter-box span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 49px;
+  color: #1e1e1e;
+}
+.counter-box strong {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 49px;
+  color: #1e1e1e;
+}
+.counter-number {
+  position: relative;
+}
+.counter-number:after {
+  width: 69px;
+  height: 69px;
+  background: rgb(214 17 17 / 5%);
+  position: absolute;
+  content: "";
+  left: -25px;
+  top: -22px;
+  z-index: -9;
+  border-radius: 50px;
+}
+.counter-box {
+  display: flex;
+  align-items: center;
+  background: rgb(214 17 17 / 5%);
+  padding-top: 61px;
+  padding-bottom: 36px;
+  padding-left: 54px;
+  padding-right: 21px;
+  position: relative;
+}
+.counter-text p {
+  margin-bottom: 0;
+}
+.counter-text {
+  padding-left: 13px;
+}
+section.counter-section.padding-top.padding-bottom {
+  background: #ffffff;
+  box-shadow: 0px 8px 25px rgb(0 0 0 / 5%);
+  position: relative;
+  z-index: 99;
+  max-width: 1406px;
+  margin: -141px auto 0 auto;
+  padding: 53px 0 53px 0;
+}

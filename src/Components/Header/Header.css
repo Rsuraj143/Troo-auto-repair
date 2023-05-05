@@ -1,0 +1,306 @@
+section#troo-da-header-section {
+  background: rgba(214, 17, 17, 0.05);
+  padding-top: 30px;
+  position: relative;
+  z-index: 9;
+}
+section#troo-da-header-section:before {
+  background: #1e1e1e;
+  position: absolute;
+  height: 239px;
+  width: 100%;
+  max-width: 449px;
+  content: "";
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+section#troo-da-header-section:after {
+  background: #1e1e1e;
+  content: "";
+  width: 37%;
+  height: 380px;
+  position: absolute;
+  top: -141px;
+  right: 19%;
+  -webkit-transform: skew(242deg);
+  -moz-transform: skew(242deg);
+  transform: skew(242deg);
+  z-index: -1;
+}
+button.hum-btn {
+  position: absolute;
+  right: 58px;
+  top: 49px;
+  background: transparent;
+  border: none;
+}
+.troo-da-header-section .navbar-brand {
+  margin-right: 0;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background: #ffffff;
+  box-shadow: 0px 4px 35px rgb(100 100 111 / 5%);
+  border-radius: 8px;
+  background: #d61111;
+  border-left: 8px solid #d61111;
+  border-right: 8px solid #d61111;
+  padding-left: 13px;
+  margin-top: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header section#troo-da-header-section a.nav-link {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #1e1e1e;
+  padding: 10px 16px !important;
+}
+.nav-link.test button.btn.btn-primary {
+  background: transparent;
+  border-color: transparent;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #1e1e1e;
+  padding: 10px 16px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0 0 !important;
+}
+.nav-link.test.dropdown {
+  padding: 0 22px;
+}
+ul.navbar-nav {
+  margin-left: 80px;
+  margin-right: 63px;
+}
+
+.dropdown-toggle::after {
+  content: "+" !important;
+  position: absolute;
+  border: none !important;
+  font-size: 16px;
+}
+header section#troo-da-header-section a.nav-link:hover {
+  opacity: 1;
+}
+li.nav-item {
+  position: relative;
+}
+li.nav-item.active:after {
+  top: -42px;
+  background-color: #d61111;
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  margin: 6px auto;
+  opacity: 1;
+}
+header section#troo-da-header-section a.nav-link:hover {
+  color: #d61111;
+}
+header section#troo-da-header-section li.nav-item.active a.nav-link {
+  color: #d61111;
+}
+header {
+  position: relative;
+  z-index: 9;
+}
+.socail-icon ul li a svg {
+  background: transparent;
+  color: #1e1e1e;
+}
+.socail-icon ul li {
+  display: inline-block;
+}
+.socail-icon ul {
+  border: 0px solid transparent !important;
+  padding: 0;
+}
+.socail-icon h4 {
+  text-transform: uppercase;
+  margin-top: 45px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0fa00f;
+}
+.socail-icon ul li a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.socail-icon ul li a:hover {
+  background-color: #d61111;
+}
+.socail-icon ul li a:hover svg {
+  color: #fff;
+}
+.call-ss {
+  display: flex;
+}
+.call-text span {
+  display: block;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.call-text strong a {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-top: 7px;
+}
+.call-section {
+  display: flex;
+  justify-content: space-around;
+}
+.call-text {
+  margin-left: 22px;
+}
+.appoinment-section a {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  background: #d61111;
+  box-shadow: 0px 4px 35px rgb(214 17 17 / 10%);
+  border-radius: 100px;
+  transition: 0.5s;
+  text-decoration: none;
+  padding: 17px 33px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.appoinment-section a:after {
+  background: #0fa00f;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  border-radius: 100px 0 0 100px;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  opacity: 0;
+  z-index: -1;
+}
+.appoinment-section a:before {
+  background: #0fa00f;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  content: "";
+  top: 0;
+  right: 0;
+  border-radius: 0 100px 100px 0;
+  z-index: -1;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  opacity: 0;
+}
+.appoinment-section:hover a:before {
+  opacity: 1;
+  width: 50%;
+}
+.appoinment-section:hover a:after {
+  opacity: 1;
+  width: 50%;
+}
+header .appoinment-section a img {
+  transition: 0.5s;
+  padding-left: 6px;
+}
+header .appoinment-section {
+  margin-right: 0;
+  margin-left: -30px;
+}
+.appoinment-section a img {
+  transition: 0.5s;
+  padding-left: 14px;
+}
+.fooetr-red-box .appoinment-section a img {
+  transition: 0.5s;
+  filter: brightness(0);
+  margin-left: 11px;
+}
+.fooetr-red-box .appoinment-section:hover img {
+  filter: brightness(1);
+}
+.appoinment-section:hover img {
+  transform: translateX(50%);
+}
+.appoinment-section a:hover {
+  color: #fff;
+  border: transparent;
+}
+.vert-move {
+  webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+  position: absolute;
+  right: 89px;
+  bottom: 44px;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+}
+100% {
+    transform: translateY(-10px);
+}
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #1e1e1e !important;
+  text-decoration: none !important;
+  background-color: transparent !important;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background: #d61111;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #1e2125;
+  background-color: transparent !important;
+}
+a.dropdown-item:hover {
+  background: #1e1e1e !important;
+  color: #fff;
+}
+ul.dropdown-menu {
+  margin-top: 0;
+  border-radius: 0;
+  -webkit-transform: scaleY(01);
+  transform: scaleY(1);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+ul.dropdown-menu {
+  top: 100%;
+}

@@ -1,0 +1,233 @@
+.why-call a {
+  text-decoration: underline;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #d61111;
+}
+.why-call a:hover {
+  color: #1e1e1e;
+}
+.why-call span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #171717;
+}
+section#troo-da-why-choose-us-section {
+  position: relative;
+  background-color: #1e1e1e;
+  z-index: 1;
+  padding-bottom: 0;
+}
+section#troo-da-why-choose-us-section:after {
+  background-image: url(../../Images/choose-img.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  max-width: 643px;
+  z-index: -9;
+}
+section#troo-da-why-choose-us-section:before {
+  background-image: url(../../Images/reshot-icon.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 24%;
+  max-width: 242px;
+  z-index: -9;
+  right: 0;
+  background-repeat: no-repeat;
+  max-height: 391px;
+}
+.why-chose-text {
+  background: #ffffff;
+  padding-left: 39px;
+  padding-top: 77px;
+  padding-bottom: 67px;
+  padding-right: 33px;
+  margin-left: -9px;
+  position: relative;
+  z-index: 9;
+}
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: -9;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  z-index: -9;
+}
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+.bgBottom {
+  z-index: 5;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+.choose-list ul li:after {
+  border: 2px dotted #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 0;
+  z-index: -9;
+  top: 6px;
+}
+.choose-text {
+  padding-left: 19px;
+}
+.choose-list ul li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 33px;
+  position: relative;
+}
+.choose-list ul li:last-child:after {
+  display: none;
+}
+.circle {
+  transform: translate(-50%, -50%);
+  width: 77px;
+  height: 48px;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #d61111;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px 0 0 0;
+}
+.circle::after,
+.circle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  z-index: -1;
+  animation: grow 1s ease-in-out infinite;
+}
+.circle::after {
+  background: rgba(255, 255, 255, 0.4);
+}
+.circle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background: rgb(95, 255, 255);
+  border-radius: 50%;
+  z-index: -1;
+  animation: grow 1s ease-in-out infinite;
+}
+.circle::before {
+  background: rgba(255, 255, 255, 0.6);
+  animation-delay: -0.5s;
+}
+.choose-list {
+  padding: 0 32px 0 85px;
+}
+@keyframes grow {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.8, 1.8);
+    opacity: 0;
+  }
+}
+.choose-text strong {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+.choose-text p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}

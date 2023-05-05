@@ -1,0 +1,86 @@
+section#troo-da-whate-we-are-section {
+  background: rgba(214, 17, 17, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+section#troo-da-whate-we-are-section:before {
+  position: absolute;
+  width: 271px;
+  height: 271px;
+  background: #fff;
+  content: "";
+  bottom: 0;
+  border-radius: 100%;
+  right: -194px;
+}
+section#troo-da-whate-we-are-section:after {
+  position: absolute;
+  width: 652px;
+  height: 652px;
+  background: #fff;
+  content: "";
+  top: 0;
+  border-radius: 100%;
+  left: -27%;
+}
+.serv-section img {
+  width: 100%;
+}
+.services-section {
+  background: #fff;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.services-section img {
+  width: 100%;
+}
+.services-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0 0 0;
+}
+.ser-img {
+  background: #1e1e1e;
+  transform: rotate(-31.33deg);
+  padding: 9px 13px;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+.ser-text h3 {
+  transition: 0.5s;
+}
+.services-section:hover .ser-img {
+  transform: rotate(0deg);
+  background: #d61111;
+}
+.services-section:hover .ser-text h3 {
+  color: #d61111;
+  text-decoration: underline;
+}
+.serv-main:after {
+  background: rgba(214, 17, 17, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.serv-main {
+  position: relative;
+}
+.services-section:hover .serv-main:after {
+  opacity: 1;
+}
+
+/* service page */
+.services section#troo-da-whate-we-are-section {
+  background: #fff;
+}
+.services section#troo-da-whate-we-are-section:after {
+  background: rgba(214, 17, 17, 0.05);
+}
+

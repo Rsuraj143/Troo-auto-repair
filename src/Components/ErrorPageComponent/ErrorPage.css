@@ -1,0 +1,61 @@
+.error-section span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 224.39px;
+  line-height: 230px;
+  color: #d61111;
+}
+.error-section {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+.error-section h2 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 41px;
+  color: #1e1e1e;
+}
+.error-section p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
+  margin-top: 28px;
+  margin-bottom: 38px;
+}
+.search-form input {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 60px;
+  max-width: 585px;
+  margin: 0 auto;
+}
+.search-form {
+  position: relative;
+  max-width: 585px;
+  text-align: center;
+  margin: 0 auto;
+}
+.error .search-form button {
+  border: none;
+  background: #1e1e1e;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  padding: 17px 18px;
+}
+.error-section .appoinment-section {
+  margin-top: 44px;
+}
+.error-section .appoinment-section a {
+  background: #1e1e1e;
+  box-shadow: 0px 4px 35px rgb(214 17 17 / 10%);
+}

@@ -1,0 +1,187 @@
+section#troo-da-who-we-are-section {
+  position: relative;
+}
+#ball {
+  width: 545px;
+  height: 545px;
+  left: 16%;
+  right: 0;
+  z-index: -9;
+  position: absolute;
+  border-radius: 50%;
+  background: #d61111;
+  opacity: 0.1;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  margin-top: 15%;
+}
+#ball:nth-child(1) {
+  animation-duration: 5s;
+}
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.radius {
+  width: 73px;
+  height: 73px;
+  border-radius: 100%;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  background: #d61111;
+}
+.title-txt span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  background: #1e1e1e;
+  padding: 17px 23px;
+  display: inline-block;
+  margin-bottom: 39px;
+}
+.title-txt h2 strong {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 41px;
+  color: #d61111;
+  display: block;
+  margin-top: 15px;
+}
+.title-txt {
+  margin-bottom: 35px;
+}
+.who-we-text strong {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #171717;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.who-we-text ul {
+  padding: 0;
+}
+.who-we-text ul li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+}
+.who-we-text ul li span {
+  display: block;
+  margin-left: 11px;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #1e1e1e;
+}
+.who-we-img {
+  position: relative;
+}
+.year-col {
+  position: absolute;
+  bottom: 21%;
+  right: 32px;
+  background: #ffffff;
+  box-shadow: 0px 4px 35px rgb(30 30 30 / 5%);
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #1e1e1e;
+  padding: 23px 28px;
+  display: inline-block;
+}
+.year-col span {
+  font-family: "Epilogue";
+  display: block;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 66px;
+  text-align: center;
+  color: #d61111;
+  -webkit-text-stroke: 1px #1e1e1e;
+  text-shadow: 0 0 black;
+  text-shadow: 1px 1px #fff, -1px 1px #fff, 1px -1px #fff, -1px -1px #fff,
+    1px 1px 5px #1e1e1e;
+  padding: 15px 0 4px 0;
+}
+.treat-col {
+  position: absolute;
+  left: 100px;
+}
+.hri-dots {
+  position: absolute;
+  right: 135px;
+  bottom: 18%;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+.abut-image-section img {
+  float: right;
+}
+.arr-img {
+  margin-left: -56px;
+}
+.what-text a {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1e1e1e;
+  text-decoration: none;
+  position: relative;
+}
+.what-text a:after {
+  background: #d61111;
+  box-shadow: 0px 4px 35px rgb(214 17 17 / 10%);
+  border-radius: 100px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -19px;
+}
+.what-text a img {
+  transition: 0.5s;
+}
+.what-text:hover img {
+  transform: translateX(50%);
+}
+.what-text a:hover {
+  color: #1e1e1e;
+}
+

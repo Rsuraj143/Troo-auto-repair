@@ -1,0 +1,75 @@
+.company-histry-text h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1e1e1e;
+  padding-bottom: 19px;
+}
+.company-histry-text ul {
+  padding: 0;
+}
+.company-histry-text ul li {
+  list-style: none;
+  padding-bottom: 16px;
+}
+.company-histry-text ul li span {
+  padding-left: 11px;
+}
+.company-history section#troo-da-who-we-are-section:after {
+  background: #d61111;
+  opacity: 0.05;
+  transform: rotate(53.75deg);
+  position: absolute;
+  width: 283px;
+  height: 400px;
+  content: "";
+  top: 42%;
+  left: -10%;
+}
+.company-journey-col h2 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 37px;
+  color: #1e1e1e;
+  padding-bottom: 19px;
+}
+.company-journey-col p {
+  margin-bottom: 30px;
+}
+.hisrt-col span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+  display: block;
+  padding-bottom: 15px;
+  margin-bottom: 24px;
+}
+.hisrt-col h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25px;
+  color: #1e1e1e;
+  margin-bottom: 14px;
+}
+.hisrt-col {
+  margin-bottom: 56px;
+}
+.company-journey-col img {
+  width: 100%;
+}
+section#troo-da-company-journey-section {
+  background: rgb(214 17 17 / 5%);
+}
+.company-history section#troo-da-about-section h1 {
+  font-size: 30px;
+}

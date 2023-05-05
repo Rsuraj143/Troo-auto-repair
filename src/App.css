@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Epilogue";
+}
+p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1e1e1e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body h1 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 56px;
+  color: #1e1e1e;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body h2 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 41px;
+  color: #1e1e1e;
+  margin: 0;
+}
+body h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1e1e1e;
+  margin: 0;
+}
+body h4 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1e1e1e;
+  transition: 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+body h5 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #1e1e1e;
+}
+.container {
+  max-width: 1300px !important;
+  width: 100% !important;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.red-btn a {
+  background: #d61111;
+  box-shadow: 0px 4px 35px rgb(214 17 17 / 10%);
+  border-radius: 100px;
+  padding: 17px 33px;
+  display: inline-block;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red-btn a img {
+  padding: 0 0 0 10px;
+  transition: 0.5s;
+}
+.red-btn:hover img {
+  transform: translateX(50%);
+}
+.red-btn:hover a {
+  color: #fff;
+}
+.black-btn a {
+  filter: drop-shadow(0px 4px 35px rgba(214, 17, 17, 0.1));
+  margin-left: 20px;
+  border: 1px solid #1e1e1e;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+}
+.black-btn.appoinment-section a {
+  color: #1e1e1e;
+  background-color: transparent;
+}
+.black-btn a img {
+  padding: 0 0 0 10px;
+  transition: 0.5s;
+}
+.black-btn:hover img {
+  transform: translateX(50%);
+}
+.black-btn:hover a {
+  color: #fff;
+  border: transparent;
+}
+.padding-top {
+  padding-top: 100px;
+}
+.padding-bottom {
+  padding-bottom: 100px;
+}
+body,
+html {
+  position: relative;
+  overflow-x: hidden;
 }

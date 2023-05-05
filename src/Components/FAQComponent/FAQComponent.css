@@ -1,0 +1,176 @@
+section#troo-da-faq-section .title-txt span {
+  padding: 12px 36px;
+}
+section#troo-da-faq-section .title-txt {
+  text-align: center;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.accordion-item {
+  background-color: #fff;
+  border: none !important;
+  margin-bottom: 25px;
+}
+.accordion-button {
+  font-family: "Epilogue" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  line-height: 25px !important;
+  color: #1e1e1e !important;
+  padding: 18px 22px 15px 66px !important;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+}
+.accordion-item:first-of-type .accordion-button {
+  padding-bottom: 17px !important;
+}
+.accordion-button.collapsed {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.accordion-collapse.collapse.show {
+  background: rgb(214 17 17 / 5%);
+  border: none;
+  box-shadow: 0px 2px 7px rgb(100 100 111 / 5%);
+}
+.accordion-button:focus {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: none !important;
+}
+.accordion-body {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #121212;
+  padding-left: 67px !important;
+  padding-right: 27px !important;
+  padding-top: 16px !important;
+}
+.accordion-button:not(.collapsed) {
+  background: rgb(214 17 17 / 5%) !important;
+  box-shadow: none !important;
+  padding-left: 62px !important;
+  padding-bottom: 0 !important;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+  border: none !important;
+}
+.accordion-button::after {
+  position: absolute;
+  background-image: url(../../Images/pluse-bt.png) !important;
+  left: 22px;
+}
+.accordion-button:not(.collapsed)::after {
+  position: absolute;
+  background-image: url(../../Images/minus-btn.png) !important;
+  left: 22px;
+}
+.red-faq-col {
+  background-image: url(../../Images/call-bg.png);
+  background-color: #d61111;
+  text-align: center;
+  padding: 41px 0 41px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.red-faq-col h3 {
+  color: #fff;
+}
+.red-faq-col p {
+  color: #fff;
+  margin: 14px 0 14px 0;
+}
+.red-faq-col span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #d61111;
+  background: #fff;
+  display: inline-block;
+  padding: 6px 5px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+.fqa-linkss span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  background: transparent;
+}
+.fqa-linkss a {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.fqa-linkss a:hover {
+  color: #1e1e1e;
+}
+.faq-img-ss img {
+  width: 100%;
+  margin-top: 63px;
+}
+section#troo-da-blog-section .row {
+  align-items: center;
+}
+
+/* faq page */
+.faq-tile:after {
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  left: 0;
+  bottom: 31px;
+  background: #d61111;
+  content: "";
+}
+.faq-tile {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 55px;
+}
+.ans-col span {
+  padding-top: 15px;
+  display: block;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #1e1e1e;
+}
+.ans-col span a {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+.ans-col {
+  text-align: center;
+  background: rgb(214 17 17 / 5%);
+  border-radius: 50%;
+  display: table;
+  padding: 40px 35px;
+  margin: 30px auto 0 auto;
+}

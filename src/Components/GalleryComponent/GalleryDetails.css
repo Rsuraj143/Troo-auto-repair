@@ -1,0 +1,77 @@
+section#troo-da-photo-gallery-deatail-section .team-contact ul li {
+  list-style: none;
+}
+section#troo-da-photo-gallery-deatail-section .team-contact ul {
+  padding: 0;
+}
+section#troo-da-photo-gallery-deatail-section .team-contact ul li span {
+  font-weight: 400;
+  display: inline-block;
+  padding: 0 0 0 13px;
+}
+section#troo-da-photo-gallery-deatail-section .team-contact ul li {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 46px;
+  color: #ffffff;
+}
+section#troo-da-photo-gallery-deatail-section .team-contact {
+  margin-top: 0;
+  padding-top: 43px;
+  padding-bottom: 26px;
+}
+.photo-gallery-deatail-text h2 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 37px;
+  color: #1e1e1e;
+  padding-top: 60px;
+  padding-bottom: 28px;
+}
+.photo-gallery-deatail-text h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 37px;
+  color: #1e1e1e;
+  padding-top: 31px;
+  padding-bottom: 28px;
+}
+.photo-gallery-deatail-con h3 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1e1e1e;
+  padding-bottom: 19px;
+}
+.photo-gallery-deatail-con ul li span {
+  padding-left: 11px;
+}
+.photo-gallery-deatail-con ul {
+  padding: 0;
+  margin: 0;
+}
+.photo-gallery-deatail-con ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+.final-col h2 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 37px;
+  color: #1e1e1e;
+  padding-top: 58px;
+  padding-bottom: 28px;
+}
+.final-col p {
+  margin-bottom: 37px;
+}

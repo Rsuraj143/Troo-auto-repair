@@ -1,0 +1,311 @@
+.pricing-ss span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 33px;
+  text-align: center;
+  color: #1e1e1e;
+  transition: 0.5s;
+}
+.prcing-col:hover .pricing-ss span {
+  color: #d61111;
+}
+.pricing-ss strong {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 49px;
+  text-align: center;
+  color: #1e1e1e;
+  margin-left: 6px;
+  transition: 0.5s;
+}
+.prcing-col:hover .pricing-ss strong {
+  color: #d61111;
+}
+.pricing-ss {
+  display: flex;
+  margin-top: 18px;
+}
+.pricing-ss sub {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #1e1e1e;
+  margin-top: 23px;
+  margin-left: 8px;
+}
+.rating-start i {
+  color: #f6961b;
+}
+.rating-start i:last-child {
+  color: #dddddd;
+}
+.rating-start {
+  padding-top: 17px;
+}
+section#troo-da-pricing-section .appoinment-section a {
+  background: #1e1e1e;
+  margin-top: 46px;
+}
+.pricing-services ul li {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+.pricing-services ul {
+  padding: 0;
+  margin: 27px 0 0 0;
+}
+.pricing-services ul li span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1e1e1e;
+  padding-left: 11px;
+  padding-top: 5px;
+}
+.pricing-services li.disable span {
+  color: #1e1e1e;
+  opacity: 0.5;
+}
+.pricing-services li.disable .checl-icon img {
+  color: #1e1e1e;
+  opacity: 0.5;
+}
+.prcing-col .red-btn a {
+  background: #1e1e1e;
+  box-shadow: 0px 4px 35px rgb(214 17 17 / 10%);
+  border-radius: 100px;
+  transition: 0.5s;
+}
+.prcing-col:hover .red-btn a {
+  background-color: #d61111;
+}
+.prcing-col .red-btn {
+  margin-top: 46px;
+}
+.prcing-col {
+  background: #ffffff;
+  box-shadow: 0px 8px 25px rgb(0 0 0 / 5%);
+  padding-left: 79px;
+  padding-top: 59px;
+  padding-bottom: 52px;
+  padding-right: 67px;
+  position: relative;
+  cursor: pointer;
+}
+section#troo-da-pricing-section:after {
+  background: #d61111;
+  position: absolute;
+  width: 100%;
+  height: 623px;
+  content: "";
+  top: -115px;
+  left: 0;
+  right: 0;
+  z-index: -9;
+}
+section#troo-da-pricing-section {
+  position: relative;
+}
+section#troo-da-pricing-section .title-txt {
+  text-align: center;
+  margin-bottom: 61px;
+}
+section#troo-da-pricing-section .title-txt h2 {
+  color: #fff;
+}
+section#troo-da-pricing-section .title-txt strong {
+  color: #fff;
+}
+.client-cricle img {
+  width: 100%;
+  max-width: 243px;
+}
+section#troo-da-pricing-section .client-cricle {
+  border: 0;
+  left: inherit;
+  right: 61px;
+  top: 0;
+}
+.arr-col {
+  position: absolute;
+}
+.dot-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+  position: absolute;
+  left: 30px;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+.dot-move.rigth-col {
+  left: inherit;
+  right: 27px;
+  bottom: 35px;
+}
+.prcing-col .radius {
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 100px;
+  left: 12%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: inherit;
+  opacity: 0.5;
+}
+.prcing-col .radius .border-animation,
+.place {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 100%;
+}
+.prcing-col .ba2 {
+  animation: rounder2 2s linear 2s infinite alternate;
+  background: rgba(245, 85, 71, 0.5);
+}
+@keyframes rounder2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.69);
+  }
+}
+.small-dot:after {
+  width: 5px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -99px;
+  background: red;
+  border-radius: 50px;
+  opacity: 0.5;
+}
+.small-dot {
+  position: relative;
+}
+.ocean {
+  height: 80px;
+  width: 150px;
+  position: absolute;
+  bottom: 59%;
+  right: -16%;
+}
+.wave {
+  background: url(../../Images/wave.png);
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  background-repeat: no-repeat;
+}
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.prcing-col.standard-package {
+  overflow: hidden;
+}
+.standard-col span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  display: block;
+  padding: 0 1px;
+  position: relative;
+  left: 30px;
+  top: 10px;
+}
+.standard-col {
+  transform: rotate(45.48deg);
+  background: #1e1e1e;
+  text-align: center;
+  position: absolute;
+  right: -23%;
+  padding: 25px 106px;
+  top: -29px;
+}
+.prcing-col.standard-package .ocean {
+  right: 23%;
+}
+.prcing-col.gold-ss .radius {
+  bottom: inherit;
+  top: 15%;
+  right: 4%;
+  left: inherit;
+}
+.prcing-col.gold-ss {
+  position: relative;
+  overflow: hidden;
+}
+.prcing-col.gold-ss .ocean {
+  bottom: 12%;
+  right: 50%;
+}
+.all-plan-col p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1e1e1e;
+  text-align: center;
+}
+.all-plan-col p a {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #d61111;
+  padding-bottom: 0;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.all-plan-col {
+  margin-top: 56px;
+}
+
+/* Pricing caed page */
+.pricing section#troo-da-pricing-section:after {
+  display: none;
+}
+.pricing .prcing-col {
+  margin-bottom: 30px;
+}
+.pricing .prcing-col {
+  padding-right: 36px;
+}

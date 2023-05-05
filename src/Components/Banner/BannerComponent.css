@@ -1,0 +1,142 @@
+#troo-da-hero-section {
+  background: rgba(214, 17, 17, 0.05);
+  padding-top: 210px;
+  padding-bottom: 229px;
+  position: relative;
+}
+.swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -9;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+.hero-text .title-txt span {
+  background: #1e1e1e;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 12px 28px;
+  margin-bottom: 39px;
+  margin-top: 0px;
+}
+.hero-text .title-txt h1 span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 56px;
+  color: #d61111;
+  background: transparent;
+  padding: 0;
+  margin-top: 14px;
+}
+.btn-section {
+  display: flex;
+  margin-top: 34px;
+  align-items: center;
+}
+#troo-da-hero-section:after {
+  background-image: url(../../Images/banner-img.png);
+  width: 50%;
+  height: 84%;
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 41px;
+  border: 8px solid #fff;
+}
+.red-dot {
+  animation-name: roll;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  z-index: 1;
+}
+@keyframes roll {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+/* Global */
+#troo-da-global-section {
+  background: rgba(214, 17, 17, 0.05);
+  padding-top: 44px;
+  padding-bottom: 58px;
+  position: relative;
+}
+.global-image-section img {
+  border: 8px solid #fff;
+  float: right;
+}
+section#troo-da-global-section figure.swing img {
+  width: 100%;
+  max-width: 523px;
+}
+section#troo-da-global-section figure.swing {
+  top: -24%;
+}
+section#troo-da-global-section .row {
+  align-items: center;
+}
+ul.breadcrumb li a {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+ul.breadcrumb li {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+section#troo-da-global-section h1:after {
+  position: absolute;
+  width: 2px;
+  height: 40px;
+  left: 0;
+  top: 23px;
+  background: #d61111;
+  content: "";
+}
+section#troo-da-global-section h1 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 33px;
+  color: #1e1e1e;
+  position: relative;
+  padding-left: 22px;
+  padding-top: 25px;
+}

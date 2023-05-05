@@ -1,0 +1,149 @@
+section#troo-da-clients-reviews-section {
+  background: rgb(214 17 17 / 5%);
+  position: relative;
+  padding-bottom: 196px;
+}
+@keyframes pop-in {
+  from {
+    transform: scale(0.05, 0.05);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+.chat-icon img {
+  animation-name: pop-in;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+figure.chat-icon {
+  position: absolute;
+  top: 0;
+}
+.qute-icon img {
+  width: 100%;
+  max-width: 150px;
+}
+.qute-icon {
+  position: absolute;
+  right: 0;
+  bottom: 13%;
+}
+.img-col img {
+  border: 2px solid #1e1e1e;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.client-section:hover .img-col img {
+  border: 2px solid #d61111;
+}
+.client-img {
+  display: flex;
+  align-items: center;
+}
+.client-deatils strong {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1e1e1e;
+}
+.client-deatils p {
+  margin: 0;
+}
+.client-deatils {
+  margin-left: 21px;
+}
+.client-section {
+  position: relative;
+}
+.clint-qute span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.client-section:hover .clint-qute {
+  background-color: #d61111;
+}
+.client-section {
+  position: relative;
+  background: #ffffff;
+  padding-top: 29px;
+  padding-left: 33px;
+  padding-right: 26px;
+  padding-bottom: 32px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.client-section p {
+  margin: 0;
+}
+.clint-qute {
+  position: absolute;
+  right: -47px;
+  background: #000;
+  z-index: 9;
+  bottom: -38px;
+  height: 57px;
+  padding: 68px 45px;
+  border-radius: 88px;
+  transition: 0.5s;
+}
+.client-img {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+.clint-qute span {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 35px;
+  color: #ffffff !important;
+  position: relative;
+  top: 18px;
+  right: 12px;
+}
+.client-section:hover h4 {
+  color: #d61111;
+}
+.client-cricle {
+  border-top: 50px solid rgb(214 17 17 / 5%);
+  border-bottom: 50px solid rgb(214 17 17 / 5%);
+  border-left: 50px solid white;
+  border-right: 50px solid white;
+  border-radius: 50%;
+  width: 357px;
+  height: 357px;
+  position: absolute;
+  top: 24%;
+  left: 40%;
+  animation: anim 5s linear infinite;
+}
+@keyframes ani {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anim {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+section#troo-da-clients-reviews-section .arr-img {
+  margin-left: -15px;
+}
