@@ -4,12 +4,14 @@ import BannerGlobal from "../../Components/Banner/BannerGlobal";
 import MapData from "../../Components/Footer/MapData";
 import FooterBox from "../../Components/Footer/FooterBox";
 import Footer from "../../Components/Footer/Footer";
+import BlogListComponent from "../../Components/BlogComponent/BlogListComponent";
 
 const BlogList = () => {
   return (
-    <div>
+    <div class="blogs-list">
       <Header />
       <BannerGlobal />
+      <BlogListComponent/>
 
       <MapData/>
       <FooterBox />
