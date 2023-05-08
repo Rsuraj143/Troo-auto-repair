@@ -1,18 +1,10 @@
 import React from "react";
 import "./BlogListComponent.css";
-import bloglist1 from "../../Images/blog-list-1.png"
-import bloglist2 from "../../Images/blog-list-2.png"
-import bloglist3 from "../../Images/blog-list-3.png"
-import bloglist4 from "../../Images/blog-list-4.png"
-import bloglist5 from "../../Images/blog-list-5.png"
-import blogAuthor1 from "../../Images/blog-writer-1.png"
-import blogAuthor2 from "../../Images/blog-writer-2.png"
-import blogAuthor3 from "../../Images/blog-writer-3.png"
-import blogAuthor4 from "../../Images/blog-writer-4.png"
-import { Link } from "react-router-dom";
+import { Link, createSearchParams } from "react-router-dom";
 import location from "../../Images/location.png"
 import call from "../../Images/call-icon.png"
 import mail from "../../Images/mail-icon.png"
+import { BlogData } from "./BlogData";
 
 const BlogListComponent = () => {
   return (
@@ -23,156 +15,37 @@ const BlogListComponent = () => {
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <div class="blog-list-ss">
+            {
+              BlogData.slice(0,4).map((e,i)=>
+              <Link to={`/Home/Blogs/Blog_Details?${createSearchParams({id : e.id})}`}>
+              <div class="blog-list-ss">
               <div class="blog-img-col">
-                <img src={bloglist1} alt="bloglist1" />
+                <img src={e.img2} alt="bloglist1" />
                 <div class="date-col">
-                  <span>
-                    22, Dec,
-                    <br />
-                    2022
-                  </span>
+                  <span>{e.date} </span>
                 </div>
               </div>
               <div class="blog-list-text">
-                <p>Auto Repair</p>
-                <h3>Why Does My Car Heater Blow Cold Air? </h3>
+                <p>{e.title} </p>
+                <h3>{e.name} </h3>
                 <p>
-                  Lorem ipsum doller sit amet aute irure velits an reprehender
-                  voluptate velit fugiat nulla pariatur exce doloe amet.
+                  {e.para}
                 </p>
                 <Link href="#">Read More</Link>
                 <div class="blog-writer">
                   <div class="blog-wri-img">
-                    <img src={blogAuthor1} alt="blogAuthor1" />
+                    <img src={e.writterImg} alt="blogAuthor1" />
                   </div>
                   <div class="blog-wri-text">
                     <span>Published by</span>
-                    <strong>Ronda Racol</strong>
+                    <strong>{e.writterName} </strong>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="blog-list-ss">
-              <div class="blog-img-col">
-                <img src={bloglist2} alt="bloglist2" />
-                <div class="date-col">
-                  <span>
-                    22, Dec,
-                    <br />
-                    2022
-                  </span>
-                </div>
-              </div>
-              <div class="blog-list-text">
-                <p>Auto Repair</p>
-                <h3>Why Does My Car Heater Blow Cold Air? </h3>
-                <p>
-                  Lorem ipsum doller sit amet aute irure velits an reprehender
-                  voluptate velit fugiat nulla pariatur exce doloe amet.
-                </p>
-                <Link href="#">Read More</Link>
-                <div class="blog-writer">
-                  <div class="blog-wri-img">
-                  <img src={blogAuthor2} alt="blogAuthor2" />
-                  </div>
-                  <div class="blog-wri-text">
-                    <span>Published by</span>
-                    <strong>Naomi Josh</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-list-ss">
-              <div class="blog-img-col">
-                <img src={bloglist3} alt="bloglist3" />
-                <div class="date-col">
-                  <span>
-                    22, Dec,
-                    <br />
-                    2022
-                  </span>
-                </div>
-              </div>
-              <div class="blog-list-text">
-                <p>Auto Repair</p>
-                <h3>Why Does My Car Heater Blow Cold Air? </h3>
-                <p>
-                  Lorem ipsum doller sit amet aute irure velits an reprehender
-                  voluptate velit fugiat nulla pariatur exce doloe amet.
-                </p>
-                <Link href="#">Read More</Link>
-                <div class="blog-writer">
-                  <div class="blog-wri-img">
-                  <img src={blogAuthor3} alt="blogAuthor3" />
-                  </div>
-                  <div class="blog-wri-text">
-                    <span>Published by</span>
-                    <strong>REmily Anderson</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-list-ss">
-              <div class="blog-img-col">
-                <img src={bloglist4} alt="bloglist4" />
-                <div class="date-col">
-                  <span>
-                    22, Dec,
-                    <br />
-                    2022
-                  </span>
-                </div>
-              </div>
-              <div class="blog-list-text">
-                <p>Auto Repair</p>
-                <h3>Why Does My Car Heater Blow Cold Air? </h3>
-                <p>
-                  Lorem ipsum doller sit amet aute irure velits an reprehender
-                  voluptate velit fugiat nulla pariatur exce doloe amet.
-                </p>
-                <Link href="#">Read More</Link>
-                <div class="blog-writer">
-                  <div class="blog-wri-img">
-                  <img src={blogAuthor4} alt="blogAuthor4" />
-                  </div>
-                  <div class="blog-wri-text">
-                    <span>Published by</span>
-                    <strong>Jecky Rozzer</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-list-ss">
-              <div class="blog-img-col">
-                <img src={bloglist5} alt="bloglist4" />
-                <div class="date-col">
-                  <span>
-                    22, Dec,
-                    <br />
-                    2022
-                  </span>
-                </div>
-              </div>
-              <div class="blog-list-text">
-                <p>Auto Repair</p>
-                <h3>Why Does My Car Heater Blow Cold Air? </h3>
-                <p>
-                  Lorem ipsum doller sit amet aute irure velits an reprehender
-                  voluptate velit fugiat nulla pariatur exce doloe amet.
-                </p>
-                <Link href="#">Read More</Link>
-                <div class="blog-writer">
-                  <div class="blog-wri-img">
-                  <img src={blogAuthor4} alt="blogAuthor4" />
-                  </div>
-                  <div class="blog-wri-text">
-                    <span>Published by</span>
-                    <strong>Jecky Rozzer</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
+              </Link>
+              )
+            }
       
           </div>
           <div class="col-md-4">

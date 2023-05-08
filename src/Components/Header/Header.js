@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import dot from "../../Images/dot.png"
 import {FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram,} from "react-icons/fa";
@@ -12,17 +12,31 @@ import { HeaderData } from "./HeaderData";
 import Navmenu from "./Navmenu";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const handleScroll = () => {
+    if (window.pageYOffset > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
     useEffect(()=>{
         window.scrollTo(0,0)
       },[])
   return (
-    <header>
+    <header >
       <section class="troo-da-header-section" id="troo-da-header-section">
         <div class="vert-move">
           <img src={dot} alt="dot" />
         </div>
-        <div class="container">
-          <div class="row">
+        <div class="container ">
+          <div class="row addressNav" >
             <div class="col-md-6">
               <div class="socail-icon">
               <ul>
@@ -62,7 +76,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <Navbar expand="lg" bg="light">
+          <Navbar expand="lg" bg="light" className={`${isScrolled ? "stickynav" : ""}`}>
           <Navbar.Brand>
             <Link to="/Home">
             <img src={logo} alt="logo" />

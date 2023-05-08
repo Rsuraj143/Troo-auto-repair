@@ -4,17 +4,21 @@ import BannerGlobal from "../Components/Banner/BannerGlobal";
 import MapData from "../Components/Footer/MapData";
 import FooterBox from "../Components/Footer/FooterBox";
 import Footer from "../Components/Footer/Footer";
-
+import ContactHelp from "../Components/ContactComponent/ContactHelp";
+import ContactForm2 from "../Components/ContactComponent/ContactForm2";
+import VideoSection from "../Components/VideoSection/VideoSection";
 
 const Appointment = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <BannerGlobal />
-
+      <ContactHelp />
+      <ContactForm2 />
+      <VideoSection/>
       <MapData />
       <FooterBox />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

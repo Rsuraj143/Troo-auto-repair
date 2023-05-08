@@ -110,6 +110,9 @@
   span {
   color: #fff;
 }
+.blogs-list  section#troo-da-service-detail-section a{
+  text-decoration: none;
+}
 .blog-detail section#troo-da-about-section h1 {
   font-size: 24px;
 }

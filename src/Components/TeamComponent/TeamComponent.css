@@ -52,7 +52,7 @@
   outline: none;
   left: -14px;
   border: none;
-  z-index: 9;
+  z-index: 0;
 }
 
 button.mainbutton:before {
@@ -130,6 +130,9 @@ section#troo-daexpert-section .red-btn {
 section#troo-daexpert-section .appoinment-section {
   text-align: center;
   margin-top: 50px;
+}
+.team .expert-team {
+  margin-bottom: 30px;
 }
 
 /* team Details */

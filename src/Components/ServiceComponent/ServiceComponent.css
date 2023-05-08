@@ -3,6 +3,9 @@ section#troo-da-whate-we-are-section {
   position: relative;
   overflow: hidden;
 }
+section#troo-da-whate-we-are-section a{
+  text-decoration: none;
+}
 section#troo-da-whate-we-are-section:before {
   position: absolute;
   width: 271px;

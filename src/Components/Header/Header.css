@@ -1,3 +1,17 @@
+.stickynav {
+  position: fixed !important;
+    z-index: 10010;
+    top: 0px;
+    bottom: auto;
+    margin-top: 0px;
+    width: 1280px;
+    transition: all 1s ease-in-out;
+}
+
+header {
+  position: relative;
+  z-index: 9;
+}
 section#troo-da-header-section {
   background: rgba(214, 17, 17, 0.05);
   padding-top: 30px;
@@ -14,6 +28,9 @@ section#troo-da-header-section:before {
   right: 0;
   top: 0;
   z-index: -1;
+}
+.navbar-expand-lg .navbar-collapse{
+  justify-content: flex-end;
 }
 section#troo-da-header-section:after {
   background: #1e1e1e;
@@ -39,16 +56,17 @@ button.hum-btn {
   margin-right: 0;
 }
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-  background: #ffffff;
+  background: #ffffff !important;
   box-shadow: 0px 4px 35px rgb(100 100 111 / 5%);
   border-radius: 8px;
   background: #d61111;
   border-left: 8px solid #d61111;
   border-right: 8px solid #d61111;
-  padding-left: 13px;
-  margin-top: 16px;
+  padding-left: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 10px;
+  width: 1280px;
 }
 header section#troo-da-header-section a.nav-link {
   font-family: "Epilogue";
@@ -79,8 +97,13 @@ header section#troo-da-header-section a.nav-link {
   padding: 0 22px;
 }
 ul.navbar-nav {
-  margin-left: 80px;
-  margin-right: 63px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.addressNav{
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
 .dropdown-toggle::after {
@@ -113,10 +136,7 @@ header section#troo-da-header-section a.nav-link:hover {
 header section#troo-da-header-section li.nav-item.active a.nav-link {
   color: #d61111;
 }
-header {
-  position: relative;
-  z-index: 9;
-}
+
 .socail-icon ul li a svg {
   background: transparent;
   color: #1e1e1e;
@@ -127,6 +147,7 @@ header {
 .socail-icon ul {
   border: 0px solid transparent !important;
   padding: 0;
+  margin-bottom: 0;
 }
 .socail-icon h4 {
   text-transform: uppercase;
@@ -303,4 +324,15 @@ ul.dropdown-menu {
 }
 ul.dropdown-menu {
   top: 100%;
+}
+
+
+@media only screen and (min-width: 991px) and (max-width:1320px)  {
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    width: auto;
+  }
+  .stickynav{
+    width: auto;
+  }
+
 }

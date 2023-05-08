@@ -1,15 +1,8 @@
 import React from "react";
 import "./GalleryComponent.css";
 import arrow from "../../Images/Arrow.png";
-import { Link } from "react-router-dom";
+import { Link, createSearchParams } from "react-router-dom";
 import blackArrow from "../../Images/black-arrow.png"
-import search from "../../Images/search-icon.png"
-import gallery1 from "../../Images/gallery-1.png"
-import gallery2 from "../../Images/gallery-2.png"
-import gallery3 from "../../Images/gallery-3.png"
-import gallery4 from "../../Images/gallery-4.png"
-import gallery5 from "../../Images/gallery-5.png"
-import gallery6 from "../../Images/gallery-6.png"
 import logo1 from "../../Images/logo1.png"
 import logo2 from "../../Images/logo2.png"
 import logo3 from "../../Images/logo3.png"
@@ -21,7 +14,7 @@ import logo8 from "../../Images/logo8.png"
 import logo9 from "../../Images/logo9.png"
 import logo10 from "../../Images/logo10.png"
 import logo11 from "../../Images/logo11.png"
-
+import { GalleryData } from "./GalleryData";
 
 
 const GalleryComponent = () => {
@@ -64,104 +57,50 @@ const GalleryComponent = () => {
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="gallery-content">
+          {
+            GalleryData.slice(0,3).map((e,i)=>
+            <div class="col-md-4">
+            <div class={e.class}>
               <div class="magnific-img">
-                <a class="image-popup-vertical-fit" href="images/gallery-1.png">
-                  <img src={gallery1} alt="9.jpg" />
+                <Link to={`/Home/Gallery/Gallery_Details?${createSearchParams({id : e.id})}`} class="image-popup-vertical-fit" >
+                  <img src={e.img} alt="9.jpg" />
                   <div class="search-con">
-                    <img src={search} alt="search" />
+                    <img src={e.icon} alt="search" />
                   </div>
-                </a>
+                </Link>
               </div>
               <div class="gallery-tile">
-                <span>Care Care</span>
-                <h3>Car Belt Replacement</h3>
+                <span>{e.title} </span>
+                <h3>{e.name} </h3>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="gallery-content gallery-two">
-              <div class="magnific-img">
-                <a class="image-popup-vertical-fit" href="images/gallery-2.png">
-                  <img src={gallery2} alt="9.jpg" />
-                  <div class="search-con">
-                    <img src={search} alt="search" />
-                  </div>
-                </a>
-              </div>
-              <div class="gallery-tile">
-                <span>Care Care</span>
-                <h3>Car Belt Replacement</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="gallery-content">
-              <div class="magnific-img">
-                <a class="image-popup-vertical-fit" href="images/gallery-3.png">
-                  <img src={gallery3} alt="9.jpg" />
-                  <div class="search-con">
-                    <img src={search} alt="search" />
-                  </div>
-                </a>
-              </div>
-              <div class="gallery-tile">
-                <span>Care Care</span>
-                <h3>Car Belt Replacement</h3>
-              </div>
-            </div>
-          </div>
+            )
+          }
+          
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <div class="gallery-content gallery-four">
+        {
+            GalleryData.slice(3,6).map((e,i)=>
+            <div class="col-md-4">
+            <div class={e.class}>
               <div class="magnific-img">
-                <a class="image-popup-vertical-fit" href="images/gallery-4.png">
-                  <img src={gallery4} alt="9.jpg" />
+                <Link to={`/Home/Gallery/Gallery_Details?${createSearchParams({id : e.id})}`} class="image-popup-vertical-fit">
+                  <img src={e.img} alt="9.jpg" />
                   <div class="search-con">
-                    <img src={search} alt="search" />
+                    <img src={e.icon} alt="search" />
                   </div>
-                </a>
+                </Link>
               </div>
               <div class="gallery-tile">
-                <span>Care Care</span>
-                <h3>Car Belt Replacement</h3>
+                <span>{e.title} </span>
+                <h3>{e.name} </h3>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="gallery-content gallery-five">
-              <div class="magnific-img">
-                <a class="image-popup-vertical-fit" href="images/gallery-5.png">
-                  <img src={gallery5} alt="9.jpg" />
-                  <div class="search-con">
-                    <img src={search} alt="search" />
-                  </div>
-                </a>
-              </div>
-              <div class="gallery-tile">
-                <span>Care Care</span>
-                <h3>Car Belt Replacement</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="gallery-content gallery-six">
-              <div class="magnific-img">
-                <a class="image-popup-vertical-fit" href="images/gallery-6.png">
-                  <img src={gallery6} alt="9.jpg" />
-                  <div class="search-con">
-                    <img src={search} alt="search" />
-                  </div>
-                </a>
-              </div>
-              <div class="gallery-tile">
-                <span>Care Care</span>
-                <h3>Car Belt Replacement</h3>
-              </div>
-            </div>
-          </div>
+            )
+          }
+         
         </div>
         <div class="row">
           <div class="col-md-12">

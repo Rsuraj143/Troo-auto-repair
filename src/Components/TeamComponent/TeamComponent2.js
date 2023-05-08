@@ -1,22 +1,7 @@
 import React from "react";
 import "./TeamComponent.css";
-import team1 from "../../Images/team-1.png";
-import team2 from "../../Images/team-2.png";
-import team3 from "../../Images/team-3.png";
-import team4 from "../../Images/team-4.png";
-import team5 from "../../Images/team-5.png";
-import team6 from "../../Images/team-6.png";
-import team7 from "../../Images/team-7.png";
-import team8 from "../../Images/team-8.png";
-import team9 from "../../Images/team-9.png";
-
-import {
-  FaTwitter,
-  FaFacebookF,
-  FaLinkedinIn,
-  FaInstagram,
-  FaShareAlt,
-} from "react-icons/fa";
+import { TeamData } from "./TeamData";
+import { Link, createSearchParams } from "react-router-dom";
 
 const TeamComponent2 = () => {
   return (
@@ -26,300 +11,96 @@ const TeamComponent2 = () => {
     >
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="expert-team">
-              <div class="ex-main">
-                <img src={team1} alt="team1" />
-              </div>
-              <div class="expert-text">
-                <div class="expert-tel">
-                  <h3>Jacob Reyes</h3>
-                  <p>CEO and Founder</p>
+          {TeamData.slice(0, 3).map((e, i) => (
+            <div class="col-md-4" key={i}>
+              <Link to={`/Home/Our_Team/Team_Details?${createSearchParams({id : e.id})}`}>
+                <div class="expert-team">
+                <div class="ex-main">
+                  <img src={e.img} alt="team1" />
                 </div>
-                <div class="share-ion">
-                  <button class="icon">
-                    <FaInstagram />
-                  </button>
-                  <button class="icon">
-                    <FaLinkedinIn />
-                  </button>
-                  <button class="icon">
-                    <FaFacebookF />
-                  </button>
-                  <button class="icon">
-                    <FaTwitter />
-                  </button>
-                </div>
-                <button class="mainbutton">
-                  <div class="buttontext">
-                    <FaShareAlt />
+                <div class="expert-text">
+                  <div class="expert-tel">
+                    <h3>{e.name} </h3>
+                    <p>{e.title} </p>
                   </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="expert-team">
-              <div class="ex-main">
-                <img src={team2} alt="team2" />
-              </div>
-              <div class="expert-text">
-                <div class="expert-tel">
-                  <h3>Jacob Reyes</h3>
-                  <p>CEO and Founder</p>
-                </div>
-                <div class="share-ion">
-                  <button class="icon">
-                    <FaInstagram />
-                  </button>
-                  <button class="icon">
-                    <FaLinkedinIn />
-                  </button>
-                  <button class="icon">
-                    <FaFacebookF />
-                  </button>
-                  <button class="icon">
-                    <FaTwitter />
-                  </button>
-                </div>
-                <button class="mainbutton">
-                  <div class="buttontext">
-                    <FaShareAlt />
+                  <div class="share-ion">
+                    {e.social.map((ele, ind) => (
+                      <button class="icon" key={ind}>
+                        {ele.icon}
+                      </button>
+                    ))}
                   </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="expert-team">
-              <div class="ex-main">
-                <img src={team3} alt="team3" />
-              </div>
-              <div class="expert-text">
-                <div class="expert-tel">
-                  <h3>Jacob Reyes</h3>
-                  <p>CEO and Founder</p>
-                </div>
-                <div class="share-ion">
-                  <button class="icon">
-                    <FaInstagram />
-                  </button>
-                  <button class="icon">
-                    <FaLinkedinIn />
-                  </button>
-                  <button class="icon">
-                    <FaFacebookF />
-                  </button>
-                  <button class="icon">
-                    <FaTwitter />
+                  <button class="mainbutton">
+                    <div class="buttontext">{e.shareIcon}</div>
                   </button>
                 </div>
-                <button class="mainbutton">
-                  <div class="buttontext">
-                    <FaShareAlt />
-                  </div>
-                </button>
               </div>
+              </Link>
+            
             </div>
-          </div>
+          ))}
         </div>
 
         <div class="row">
-          <div class="col-md-4">
-            <div class="expert-team">
-              <div class="ex-main">
-                <img src={team4} alt="team4" />
-              </div>
-              <div class="expert-text">
-                <div class="expert-tel">
-                  <h3>Grabial Doe</h3>
-                  <p>Assistant Director</p>
+          {TeamData.slice(3, 6).map((e, i) => (
+            <div class="col-md-4" key={i}>
+              <Link to={`/Home/Our_Team/Team_Details?${createSearchParams({id : e.id})}`}>
+               <div class="expert-team">
+                <div class="ex-main">
+                  <img src={e.img} alt="team1" />
                 </div>
-                <div class="share-ion">
-                  <button class="icon">
-                    <FaInstagram />
-                  </button>
-                  <button class="icon">
-                    <FaLinkedinIn />
-                  </button>
-                  <button class="icon">
-                    <FaFacebookF />
-                  </button>
-                  <button class="icon">
-                    <FaTwitter />
-                  </button>
-                </div>
-                <button class="mainbutton">
-                  <div class="buttontext">
-                    <FaShareAlt />
+                <div class="expert-text">
+                  <div class="expert-tel">
+                    <h3>{e.name} </h3>
+                    <p>{e.title} </p>
                   </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="expert-team">
-              <div class="ex-main">
-                <img src={team5} alt="team5" />
-              </div>
-              <div class="expert-text">
-                <div class="expert-tel">
-                  <h3>Jacob Reyes</h3>
-                  <p>Brake Repairer</p>
-                </div>
-                <div class="share-ion">
-                  <button class="icon">
-                    <FaInstagram />
-                  </button>
-                  <button class="icon">
-                    <FaLinkedinIn />
-                  </button>
-                  <button class="icon">
-                    <FaFacebookF />
-                  </button>
-                  <button class="icon">
-                    <FaTwitter />
-                  </button>
-                </div>
-                <button class="mainbutton">
-                  <div class="buttontext">
-                    <FaShareAlt />
+                  <div class="share-ion">
+                    {e.social.map((ele, ind) => (
+                      <button class="icon" key={ind}>
+                        {ele.icon}
+                      </button>
+                    ))}
                   </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="expert-team">
-              <div class="ex-main">
-                <img src={team6} alt="team6" />
-              </div>
-              <div class="expert-text">
-                <div class="expert-tel">
-                  <h3>John Marshal</h3>
-                  <p>Truck Mechanic</p>
-                </div>
-                <div class="share-ion">
-                  <button class="icon">
-                    <FaInstagram />
-                  </button>
-                  <button class="icon">
-                    <FaLinkedinIn />
-                  </button>
-                  <button class="icon">
-                    <FaFacebookF />
-                  </button>
-                  <button class="icon">
-                    <FaTwitter />
+                  <button class="mainbutton">
+                    <div class="buttontext">{e.shareIcon}</div>
                   </button>
                 </div>
-                <button class="mainbutton">
-                  <div class="buttontext">
-                    <FaShareAlt />
-                  </div>
-                </button>
               </div>
+              </Link>
+             
             </div>
-          </div>
+          ))}
         </div>
 
         <div class="row">
-          <div class="col-md-4">
-            <div class="expert-team">
-              <div class="ex-main">
-                <img src={team7} alt="team7" />
-              </div>
-              <div class="expert-text">
-                <div class="expert-tel">
-                  <h3>Methew White</h3>
-                  <p>Apprentice Repairer</p>
+          {TeamData.slice(6, 9).map((e, i) => (
+            <div class="col-md-4" key={i}>
+              <Link to={`/Home/Our_Team/Team_Details?${createSearchParams({id : e.id})}`}>
+               <div class="expert-team">
+                <div class="ex-main">
+                  <img src={e.img} alt="team1" />
                 </div>
-                <div class="share-ion">
-                  <button class="icon">
-                    <FaInstagram />
-                  </button>
-                  <button class="icon">
-                    <FaLinkedinIn />
-                  </button>
-                  <button class="icon">
-                    <FaFacebookF />
-                  </button>
-                  <button class="icon">
-                    <FaTwitter />
-                  </button>
-                </div>
-                <button class="mainbutton">
-                  <div class="buttontext">
-                    <FaShareAlt />
+                <div class="expert-text">
+                  <div class="expert-tel">
+                    <h3>{e.name} </h3>
+                    <p>{e.title} </p>
                   </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="expert-team">
-              <div class="ex-main">
-                <img src={team8} alt="team8" />
-              </div>
-              <div class="expert-text">
-                <div class="expert-tel">
-                  <h3>Juilian Heart</h3>
-                  <p>Main Mechanic</p>
-                </div>
-                <div class="share-ion">
-                  <button class="icon">
-                    <FaInstagram />
-                  </button>
-                  <button class="icon">
-                    <FaLinkedinIn />
-                  </button>
-                  <button class="icon">
-                    <FaFacebookF />
-                  </button>
-                  <button class="icon">
-                    <FaTwitter />
-                  </button>
-                </div>
-                <button class="mainbutton">
-                  <div class="buttontext">
-                    <FaShareAlt />
+                  <div class="share-ion">
+                    {e.social.map((ele, ind) => (
+                      <button class="icon" key={ind}>
+                        {ele.icon}
+                      </button>
+                    ))}
                   </div>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="expert-team">
-              <div class="ex-main">
-                <img src={team9} alt="team9" />
-              </div>
-              <div class="expert-text">
-                <div class="expert-tel">
-                  <h3>Danial Sana</h3>
-                  <p>Trolley Enginer</p>
-                </div>
-                <div class="share-ion">
-                  <button class="icon">
-                    <FaInstagram />
-                  </button>
-                  <button class="icon">
-                    <FaLinkedinIn />
-                  </button>
-                  <button class="icon">
-                    <FaFacebookF />
-                  </button>
-                  <button class="icon">
-                    <FaTwitter />
+                  <button class="mainbutton">
+                    <div class="buttontext">{e.shareIcon}</div>
                   </button>
                 </div>
-                <button class="mainbutton">
-                  <div class="buttontext">
-                    <FaShareAlt />
-                  </div>
-                </button>
               </div>
+              </Link>
+             
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
