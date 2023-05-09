@@ -5,8 +5,10 @@ import MapData from "../../Components/Footer/MapData";
 import FooterBox from "../../Components/Footer/FooterBox";
 import Footer from "../../Components/Footer/Footer";
 import ServiceComponent2 from "../../Components/ServiceComponent/ServiceComponent2";
+import useDocumentTitle from "../../PageTitle";
 
 const Services = () => {
+  useDocumentTitle("TRoo | Service")
   return (
     <div class="services">
       <Header />

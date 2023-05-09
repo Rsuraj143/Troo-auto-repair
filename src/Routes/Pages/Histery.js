@@ -8,9 +8,11 @@ import CompanHistaory from "../../Components/CompanuHistory/CompanHistaory";
 import CompanyJourny from "../../Components/CompanuHistory/CompanyJourny";
 import TeamComponent from "../../Components/TeamComponent/TeamComponent";
 import VideoSection from "../../Components/VideoSection/VideoSection";
+import useDocumentTitle from "../../PageTitle";
 
 
 const Histery = () => {
+  useDocumentTitle("TRoo | Company History")
   return (
     <div>
       <Header/>

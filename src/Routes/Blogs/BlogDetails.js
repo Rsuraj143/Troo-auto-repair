@@ -7,9 +7,11 @@ import Footer from "../../Components/Footer/Footer";
 import BlogDetailsComponent from "../../Components/BlogComponent/BlogDetailsComponent";
 import BlogComponent3 from "../../Components/BlogComponent/BlogComponent3";
 import VideoSection from "../../Components/VideoSection/VideoSection";
+import useDocumentTitle from "../../PageTitle";
 
 
 const BlogDetails = () => {
+  useDocumentTitle("TRoo | Blog Details")
   return (
     <div class="blog-detail">
       <Header/>

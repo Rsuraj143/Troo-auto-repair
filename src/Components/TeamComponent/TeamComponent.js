@@ -54,7 +54,7 @@ const TeamComponent = () => {
         <div class="row">
           <div class="col-md-12">
             <div class="appoinment-section">
-              <Link href="#">
+              <Link to="/Home/Our_Team">
                 See All Member
                 <img src={arrow} alt="arrow" />
               </Link>

@@ -289,7 +289,7 @@ const PricingCardcomponent = () => {
             <div class="all-plan-col">
               <p>
                 Want See More Plan?
-                <Link href="#">
+                <Link to="/Home/Pricing_Table">
                   View All Plans <img src={red} alt="red" />
                 </Link>
               </p>

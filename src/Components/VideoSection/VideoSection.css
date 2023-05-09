@@ -1,19 +1,22 @@
 section#troo-da-video-section {
   position: relative;
   background: #1e1e1e;
-  padding-bottom: 123px;
+ padding: 0;
 }
-section#troo-da-video-section:before {
+section#troo-da-video-section .container{
+  max-width: 100% !important;
+}
+section#troo-da-video-section .left:before {
   background-image: url(../../Images/Gear.png);
   position: absolute;
   width: 100%;
   height: 100%;
   content: "";
   background-repeat: no-repeat;
-  left: 34px;
-  top: 34px;
-  max-width: 436px;
-  max-height: 436px;
+}
+
+section#troo-da-video-section .left{
+  padding: 100px;
 }
 section#troo-da-video-section .title-txt h2 {
   color: #fff;
@@ -27,11 +30,11 @@ section#troo-da-video-section .title-txt span {
 }
 .video-circle {
   position: absolute;
-  top: 50%;
-  right: 417px;
-  transform: translate(-50%, -50%);
+  top: 0;
+  bottom: 0;
   width: 100px;
   height: 100px;
+  display: block;
   background-color: #d61111;
   color: white;
   text-align: center;
@@ -39,6 +42,9 @@ section#troo-da-video-section .title-txt span {
   border-radius: 50%;
   cursor: pointer;
   z-index: 1;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .video-circle::before {
   content: "";
@@ -67,7 +73,10 @@ section#troo-da-video-section .title-txt span {
     opacity: 0;
   }
 }
-section#troo-da-video-section::after {
+section#troo-da-video-section .right{
+  position: relative;
+}
+section#troo-da-video-section .right::after {
   background-image: url(../../Images/video-img.png);
   position: absolute;
   width: 100%;
@@ -75,27 +84,125 @@ section#troo-da-video-section::after {
   content: "";
   top: 0;
   background-repeat: no-repeat;
-  max-width: 935px;
-  right: 0;
+  background-position: center;
+  background-size: cover;
+  
 }
-.modal-body video {
+
+/* .no-scroll {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+} */
+.no-scroll header{
+  z-index: 0;
 }
-button.btn-close {
-  position: absolute;
-  right: -14px;
-  background-color: #fff;
+.modal__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 28, 28, 0.19);
+  backdrop-filter: blur(6px);
   opacity: 1;
-  top: -20px;
-  border-radius: 6px;
-  background-size: 10px;
-  z-index: 9;
+  animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: modal-video;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+  z-index: 99999;
 }
-.modal-content {
-  background: #fff !important;
-  border: none !important;
-  padding: 11px 11px 4px 10px;
+
+.modal__align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.modal-body {
-  padding: 0 !important;
+
+.modal__content {
+  width: 800px;
+  height: 500px;
+  box-shadow: 0px 100px 80px rgba(184, 184, 184, 0.07),
+    0px 25.8162px 19px 4px rgba(178, 178, 178, 0.0456112),
+    0px 7.779px 7.30492px rgba(0, 0, 0, 0.035),
+    0px 1.48838px 2.0843px rgba(0, 0, 0, 0.0243888);
+  border-radius: 20px;
+  background: transparent;
+  color: #000;
+  margin: 0rem 4rem;
+}
+
+.modal__close {
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  bottom: 50px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.modal__video-align {
+  display: flex;
+  position: relative;
+  bottom: 37px;
+}
+
+.modal__video-style {
+  border-radius: 20px;
+  z-index: 100;
+}
+
+.modal__spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__spinner {
+  animation: spin 2s linear infinite;
+  font-size: 40px;
+  color: #1b6aae;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .modal__content {
+    margin: 0rem 1rem;
+    width: 100%;
+  }
+  .modal__video-style {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .modal__content {
+    background: transparent;
+    height: auto;
+  }
+  .modal__video-align {
+    bottom: 0px;
+  }
+  .modal__viineer1deo-style {
+    height: auto;
+  }
 }

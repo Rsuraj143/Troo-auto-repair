@@ -32,7 +32,7 @@ const ServiceComponent = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard.
               </p>
-              <Link href="#">
+              <Link to="/Home/Our_Services">
                 View All Services <img src={blackArrow} alt="blackArrow" />
               </Link>
             </div>

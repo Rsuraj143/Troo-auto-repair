@@ -6,8 +6,10 @@ import FooterBox from "../../Components/Footer/FooterBox";
 import Footer from "../../Components/Footer/Footer";
 import GallyDetailsComponent from "../../Components/GalleryComponent/GallyDetailsComponent";
 import VideoSection from "../../Components/VideoSection/VideoSection";
+import useDocumentTitle from "../../PageTitle";
 
 const GalleryDetails = () => {
+  useDocumentTitle("TRoo | Gallery Details")
   return (
     <div>
       <Header />

@@ -22,7 +22,7 @@ const BlogComponent = () => {
           </div>
           <div class="col-md-4">
             <div class="appoinment-section">
-              <Link href="#">
+              <Link to="/Home/Blogs">
                 Read All Blogs
                 <img src={whtArrow} alt="whtArrow" />
               </Link>

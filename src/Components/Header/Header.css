@@ -1,11 +1,12 @@
 .stickynav {
   position: fixed !important;
-    z-index: 10010;
-    top: 0px;
-    bottom: auto;
-    margin-top: 0px;
-    width: 1280px;
-    transition: all 1s ease-in-out;
+  z-index: 10010;
+  top: 0px;
+  /* left: 0px;
+  margin: 0 30px; */
+  bottom: auto;
+  margin-top: 0px;
+  width: 1280px;
 }
 
 header {
@@ -29,7 +30,7 @@ section#troo-da-header-section:before {
   top: 0;
   z-index: -1;
 }
-.navbar-expand-lg .navbar-collapse{
+.navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
 }
 section#troo-da-header-section:after {
@@ -100,7 +101,7 @@ ul.navbar-nav {
   margin-left: 50px;
   margin-right: 50px;
 }
-.addressNav{
+.addressNav {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
@@ -136,6 +137,24 @@ header section#troo-da-header-section a.nav-link:hover {
 header section#troo-da-header-section li.nav-item.active a.nav-link {
   color: #d61111;
 }
+.nav-item.active .nav-link.test button.btn.btn-primary {
+  color: #d61111;
+}
+.nav-link.test button.btn.btn-primary:hover {
+  color: #d61111;
+}
+.nav-link.test .dropdown-item {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 18px;
+  color: #ffffff !important;
+}
+.nav-link.test .active.dropdown-item {
+  background: #1e1e1e !important;
+}
 
 .socail-icon ul li a svg {
   background: transparent;
@@ -143,6 +162,7 @@ header section#troo-da-header-section li.nav-item.active a.nav-link {
 }
 .socail-icon ul li {
   display: inline-block;
+  margin-right: 10px;
 }
 .socail-icon ul {
   border: 0px solid transparent !important;
@@ -171,6 +191,7 @@ header section#troo-da-header-section li.nav-item.active a.nav-link {
 }
 .call-ss {
   display: flex;
+  column-gap: 20px;
 }
 .call-text span {
   display: block;
@@ -194,11 +215,10 @@ header section#troo-da-header-section li.nav-item.active a.nav-link {
 }
 .call-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: end;
+  column-gap: 30px;
 }
-.call-text {
-  margin-left: 22px;
-}
+
 .appoinment-section a {
   font-family: "Epilogue";
   font-style: normal;
@@ -211,7 +231,7 @@ header section#troo-da-header-section li.nav-item.active a.nav-link {
   border-radius: 100px;
   transition: 0.5s;
   text-decoration: none;
-  padding: 17px 33px;
+  padding: 17px 20px;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -280,7 +300,6 @@ header .appoinment-section {
   border: transparent;
 }
 .vert-move {
-  webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
   position: absolute;
   right: 89px;
@@ -289,10 +308,10 @@ header .appoinment-section {
 @keyframes mover {
   0% {
     transform: translateY(0);
-}
-100% {
+  }
+  100% {
     transform: translateY(-10px);
-}
+  }
 }
 .dropdown-item.active,
 .dropdown-item:active {
@@ -326,13 +345,51 @@ ul.dropdown-menu {
   top: 100%;
 }
 
+@media (max-width: 1800px) {
+}
 
-@media only screen and (min-width: 991px) and (max-width:1320px)  {
-  nav.navbar.navbar-expand-lg.navbar-light.bg-light{
-    width: auto;
+@media (max-width: 1320px) {
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    width: -webkit-fill-available;
   }
-  .stickynav{
-    width: auto;
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
   }
-
+  ul.navbar-nav {
+    margin: 0 20px;
+  }
+  .stickynav {
+    position: auto;
+    z-index: 10010;
+    top: 0px;
+    left: 0px;
+    margin: 0 30px;
+    bottom: auto;
+    margin-top: 0px;
+    width: 1280px;
+  }
+  .navbar-brand img {
+    max-width: 180px;
+  }
+  .troo-da-header-section .vert-move{
+    display: none
+  }
+  body .container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 1150px) {
+  header .appoinment-section{
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse{
+    justify-content: end;
+  }
+  section#troo-da-header-section:after{
+    width: 45%;
+  }
+  li.nav-item.active:after{
+    top: -35px;
+  }
 }

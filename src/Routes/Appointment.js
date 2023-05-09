@@ -7,8 +7,10 @@ import Footer from "../Components/Footer/Footer";
 import ContactHelp from "../Components/ContactComponent/ContactHelp";
 import ContactForm2 from "../Components/ContactComponent/ContactForm2";
 import VideoSection from "../Components/VideoSection/VideoSection";
+import useDocumentTitle from "../PageTitle";
 
 const Appointment = () => {
+  useDocumentTitle("TRoo | Appointment")
   return (
     <div>
       <Header />

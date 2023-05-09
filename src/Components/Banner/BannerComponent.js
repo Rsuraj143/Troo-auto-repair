@@ -30,13 +30,13 @@ const BannerComponent = () => {
               </p>
               <div class="btn-section">
                 <div class="appoinment-section">
-                  <Link href="#">
+                  <Link to="/Home/Contact_Us">
                     Contact Us
                     <img src={arrow} alt="arrow" />
                   </Link>
                 </div>
                 <div class="black-btn appoinment-section">
-                  <Link href="#">
+                  <Link to="/Home/Our_Services">
                     View All Services
                     <img src={blackArrow} alt="blackArrow" />
                   </Link>

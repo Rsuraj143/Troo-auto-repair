@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import arrow from "../../Images/white-arrow.png"
+import { Link } from "react-router-dom";
 
 const FooterBox = () => {
   return (
@@ -15,10 +16,10 @@ const FooterBox = () => {
                 New Visit Our Workshop Today.
               </span>
               <div class="appoinment-section">
-                <a href="make-an-appointment.html">
+                <Link to="/Home/Make_An_Appointment">
                   Make An Appointment
                   <img src={arrow} alt="arrow" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

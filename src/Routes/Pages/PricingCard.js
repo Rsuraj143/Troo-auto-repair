@@ -6,9 +6,11 @@ import FooterBox from "../../Components/Footer/FooterBox";
 import Footer from "../../Components/Footer/Footer";
 import PricingCardComponent2 from "../../Components/PricingCardComponent/PricingCardComponent2";
 import VideoSection from "../../Components/VideoSection/VideoSection";
+import useDocumentTitle from "../../PageTitle";
 
 
 const PricingCard = () => {
+  useDocumentTitle("TRoo | PricingCard")
   return (
     <div class="pricing">
       <Header/>

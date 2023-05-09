@@ -49,7 +49,7 @@ const GalleryComponent = () => {
                 Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <Link href="#">
+              <Link to="/Home/Gallery">
                 View All Gallery
                 <img src={blackArrow} alt="blackArrow" />
               </Link>

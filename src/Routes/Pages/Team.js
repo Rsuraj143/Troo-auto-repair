@@ -7,9 +7,11 @@ import Footer from "../../Components/Footer/Footer";
 import TeamComponent2 from "../../Components/TeamComponent/TeamComponent2";
 import ReviewComponent from "../../Components/ReviewComponent/ReviewComponent";
 import Counter from "../../Components/Counter/Counter";
+import useDocumentTitle from "../../PageTitle";
 
 
 const Team = () => {
+  useDocumentTitle("TRoo | Team")
   return (
     <div class="team">
       <Header />

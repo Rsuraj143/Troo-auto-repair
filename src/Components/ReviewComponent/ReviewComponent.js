@@ -43,7 +43,7 @@ const ReviewComponent = () => {
                 Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <Link href="#">
+              <Link to="/Home/Testimonial">
                 View All Reviews
                 <img src={BlackArrow} alt="BlackArrow" />
               </Link>

@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./VideoSection.css";
 import whtArrow from "../../Images/white-arrow.png";
 import { Link } from "react-router-dom";
 import paly from "../../Images/play-icon.png";
+import { IoCloseOutline } from "react-icons/io5";
 
 const VideoSection = () => {
+  const [modal, setModal] = useState(false);
+  const openModal = () => {
+    if (!modal) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    setModal(!modal);
+  };
   return (
     <section
       class="troo-da-video-section padding-top padding-bottom"
@@ -12,7 +22,7 @@ const VideoSection = () => {
     >
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 left">
             <div class="video-text">
               <div class="title-txt">
                 <span>How Can We Help You</span>
@@ -21,43 +31,44 @@ const VideoSection = () => {
                 </h2>
               </div>
               <div class="appoinment-section">
-                <Link href="#">
+                <Link to="/Home/Make_An_Appointment">
                   Make an Appointment <img src={whtArrow} alt="whtArrow" />
                 </Link>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div
+          <div class="col-md-6 right">
+            <button
               class="video-circle"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              onClick={openModal}
             >
               <img src={paly} alt="paly" />
-            </div>
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                    <video controls>
-                      <source src="movie.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                </div>
-              </div>
-            </div>
+              {modal ? (
+                  <section className="modal__bg">
+                    <div className="modal__align">
+                      <div className="modal__content" modal={modal}>
+                        <IoCloseOutline
+                          className="modal__close"
+                          arial-label="Close modal"
+                          onClick={setModal}
+                        />
+                        <div className="modal__video-align">
+                          <iframe
+                            width="800"
+                            height="500"
+                            src="https://www.youtube.com/embed/DUfXdcpEfMs"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                ) : null}
+            </button>
+           
           </div>
         </div>
       </div>

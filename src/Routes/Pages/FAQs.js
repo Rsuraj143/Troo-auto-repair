@@ -6,9 +6,11 @@ import FooterBox from "../../Components/Footer/FooterBox";
 import Footer from "../../Components/Footer/Footer";
 import FAQComponent2 from "../../Components/FAQComponent/FAQComponent2";
 import VideoSection from "../../Components/VideoSection/VideoSection";
+import useDocumentTitle from "../../PageTitle";
 
 
 const FAQs = () => {
+  useDocumentTitle("TRoo | FAQs")
   return (
     <div>
       <Header />

@@ -7,9 +7,11 @@ import Footer from "../../Components/Footer/Footer";
 import GalleryComponent2 from "../../Components/GalleryComponent/GalleryComponent2";
 import VideoSection from "../../Components/VideoSection/VideoSection";
 import FAQComponent from "../../Components/FAQComponent/FAQComponent";
+import useDocumentTitle from "../../PageTitle";
 
 
 const Gallery = () => {
+  useDocumentTitle("TRoo | Gallery")
   return (
     <div class="photo-gallery">
       <Header/>

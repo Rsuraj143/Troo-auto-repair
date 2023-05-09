@@ -7,8 +7,10 @@ import Footer from "../../Components/Footer/Footer";
 import ReviewComponent2 from "../../Components/ReviewComponent/ReviewComponent2";
 import VideoSection from "../../Components/VideoSection/VideoSection";
 import FAQComponent from "../../Components/FAQComponent/FAQComponent";
+import useDocumentTitle from "../../PageTitle";
 
 const Testimonial = () => {
+  useDocumentTitle("TRoo | Testimonials")
   return (
     <div>
       <Header />

@@ -10,8 +10,10 @@ import TeamComponent from "../Components/TeamComponent/TeamComponent";
 import ReviewComponent from "../Components/ReviewComponent/ReviewComponent";
 import Counter from "../Components/Counter/Counter";
 import PricingCardcomponent from "../Components/PricingCardComponent/PricingCardcomponent";
+import useDocumentTitle from "../PageTitle";
 
 const About = () => {
+  useDocumentTitle("TRoo | About")
   return (
     <div class="about">
       <Header />

@@ -6,8 +6,10 @@ import FooterBox from "../../Components/Footer/FooterBox";
 import Footer from "../../Components/Footer/Footer";
 import BlogComponent2 from "../../Components/BlogComponent/BlogComponent2";
 import VideoSection from "../../Components/VideoSection/VideoSection";
+import useDocumentTitle from "../../PageTitle";
 
 const Blogs = () => {
+  useDocumentTitle("TRoo | Blogs")
   return (
     <div class="blogs">
       <Header />

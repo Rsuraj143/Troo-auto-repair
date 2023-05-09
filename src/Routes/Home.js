@@ -15,8 +15,10 @@ import GalleryComponent from "../Components/GalleryComponent/GalleryComponent";
 import VideoSection from "../Components/VideoSection/VideoSection";
 import FAQComponent from "../Components/FAQComponent/FAQComponent";
 import BlogComponent from "../Components/BlogComponent/BlogComponent";
+import useDocumentTitle from "../PageTitle";
 
 const Home = () => {
+  useDocumentTitle("TRoo Auto & Repair")
   return (
     <div>
       <Header />

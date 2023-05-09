@@ -81,7 +81,7 @@ const AboutComponent = () => {
                 </li>
               </ul>
               <div class="appoinment-section">
-                <Link href="#">
+                <Link to="/Home/About_Us">
                   Learn More
                   <img src={arrow} alt="arrow" />
                 </Link>

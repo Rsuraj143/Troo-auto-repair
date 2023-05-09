@@ -7,8 +7,10 @@ import Footer from "../Components/Footer/Footer";
 import ContactHelp from "../Components/ContactComponent/ContactHelp";
 import ContactForm from "../Components/ContactComponent/ContactForm";
 import VideoSection from "../Components/VideoSection/VideoSection";
+import useDocumentTitle from "../PageTitle";
 
 const Contact = () => {
+  useDocumentTitle("TRoo | Contact")
   return (
     <div class="contact">
       <Header />

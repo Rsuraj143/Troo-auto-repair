@@ -37,7 +37,7 @@ const Header = () => {
         </div>
         <div class="container ">
           <div class="row addressNav" >
-            <div class="col-md-6">
+            <div class="col-md-3">
               <div class="socail-icon">
               <ul>
                 <li><Link to="#"><FaFacebookF /></Link></li>
@@ -47,7 +47,7 @@ const Header = () => {
               </ul>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-9">
               <div class="call-section">
                 <div class="call-ss">
                   <div class="call-img">
@@ -68,7 +68,7 @@ const Header = () => {
                     <span>Email Us on</span>
                     <strong>
                       <a href="mailto:trooautorepair@email.com">
-                        trooautorepair@email.com
+                        trooautorepair@gmail.com
                       </a>
                     </strong>
                   </div>
@@ -78,7 +78,7 @@ const Header = () => {
           </div>
           <Navbar expand="lg" bg="light" className={`${isScrolled ? "stickynav" : ""}`}>
           <Navbar.Brand>
-            <Link to="/Home">
+            <Link to="/">
             <img src={logo} alt="logo" />
             </Link>
           </Navbar.Brand>
