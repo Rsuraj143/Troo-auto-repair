@@ -213,3 +213,38 @@ section#troo-daexpert-section .appoinment-section {
 .team-contetn {
   padding-left: 59px;
 }
+@media (max-width: 1250px) {
+  .team-detail img {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .expert-team {
+    margin-bottom: 30px;
+  }
+  .expert-team img {
+    width: 100%;
+  }
+  .expert-text h3 {
+    color: #fff;
+    font-size: 18px;
+  }
+  .mainbutton {
+    left: 6px;
+  }
+}
+
+@media (max-width : 767px) {
+  .expert-text {
+    max-width: 100%;
+  }
+  .share-ion{
+    right: 0;
+  }
+  .team-contetn { padding-left: 0; padding-top: 50px;}
+}
+@media (max-width : 414px) {
+  section#troo-daexpert-section .appoinment-section {
+    margin-top: 0px;
+  }
+}

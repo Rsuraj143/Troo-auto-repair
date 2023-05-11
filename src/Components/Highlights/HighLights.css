@@ -140,6 +140,7 @@ section#troo-da-why-choose-us-section:before {
 }
 .choose-text {
   padding-left: 19px;
+  flex: 1;
 }
 .choose-list ul li {
   display: flex;
@@ -152,8 +153,8 @@ section#troo-da-why-choose-us-section:before {
 }
 .circle {
   transform: translate(-50%, -50%);
-  width: 77px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   font-family: "Epilogue";
   font-style: normal;
   font-weight: 900;
@@ -164,6 +165,7 @@ section#troo-da-why-choose-us-section:before {
   background-color: #fff;
   border-radius: 50%;
   padding: 12px 0 0 0;
+  
 }
 .circle::after,
 .circle::before {
@@ -230,3 +232,32 @@ section#troo-da-why-choose-us-section:before {
   line-height: 26px;
   color: #ffffff;
 }
+
+@media (max-width: 1700px) {
+  section#troo-da-why-choose-us-section:before {
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .why-call a {
+    font-size: 18px;
+  }
+  .choose-list {
+    padding: 50px 0px 0 0px;
+  }
+
+  .choose-text {
+    padding-left: 0;
+  }
+  section#troo-da-why-choose-us-section:after {
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 414px) {
+  .why-chose-text{
+    padding: 50px 15px;
+  }
+}
+

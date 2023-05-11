@@ -28,7 +28,7 @@ const GalleryComponent = () => {
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 galleryHeading">
             <div class="title-txt">
               <span>Our Photo Gallery</span>
               <h2>
@@ -36,7 +36,7 @@ const GalleryComponent = () => {
               </h2>
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 arrow">
             <div class="arr-img">
               <img src={arrow} alt="arrow" />
             </div>

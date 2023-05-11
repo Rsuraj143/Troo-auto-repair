@@ -23,9 +23,7 @@ section#troo-da-faq-section .title-txt {
   padding: 18px 22px 15px 66px !important;
   border: 0px solid rgba(0, 0, 0, 0.1);
 }
-.accordion-item:first-of-type .accordion-button {
-  padding-bottom: 17px !important;
-}
+
 .accordion-button.collapsed {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -173,4 +171,37 @@ section#troo-da-blog-section .row {
   display: table;
   padding: 40px 35px;
   margin: 30px auto 0 auto;
+}
+@media (max-width: 1024px) {
+  .accordion-button {
+    font-size: 18px !important;
+    line-height: 27px !important;
+    padding: 10px 22px 10px 55px !important;
+  }
+  .accordion-button::after {
+    left: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .accordion-button {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+}
+@media (max-width: 767px) {
+
+  .accordion-button {
+    font-size: 18px !important;
+    line-height: 27px !important;
+  }
+}
+@media (max-width: 414px) {
+  .accordion-button {
+    font-size: 16px !important;
+    padding: 10px 10px 10px 40px !important;
+  }
+  .accordion-button::after {
+    left: 10px;
+    top: 15px;
+  }
 }

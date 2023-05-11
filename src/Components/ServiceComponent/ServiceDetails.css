@@ -174,3 +174,21 @@ section#troo-da-service-detail-section {
 .feach-img img {
   width: 100%;
 }
+
+@media (max-width: 991px) {
+  .services-contact h3:after {
+    display: none;
+  }
+  .feach-img {
+    margin-bottom: 30px;
+  }
+  section#troo-da-service-detail-section .col-md-8 {
+    width: 100%;
+  }
+  section#troo-da-service-detail-section .col-md-4 {
+    width: 100%;
+  }
+  section#troo-da-service-detail-section {
+    padding: 50px 0;
+}
+}

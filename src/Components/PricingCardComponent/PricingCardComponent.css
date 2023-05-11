@@ -309,3 +309,43 @@ section#troo-da-pricing-section .client-cricle {
 .pricing .prcing-col {
   padding-right: 36px;
 }
+
+@media (max-width: 1024px) {
+  .prcing-col {
+    padding-top: 59px;
+    padding-bottom: 52px;
+    margin-bottom: 30px;
+    padding-left: 18px;
+    padding-right: 10px;
+  }
+  .pricing-ss {
+    flex-wrap: wrap;
+  }
+  .pricing-ss strong {
+    font-size: 35px;
+  }
+  .pricing-services ul li span {
+    font-size: 15px;
+  }
+  .pricing-ss sub {
+    margin-top: 0;
+  }
+  .standard-col {
+    right: -40%;
+  }
+}
+
+@media (max-width : 767px) {
+  .prcing-col {
+    padding-left: 38px;
+    padding-top: 59px;
+    padding-bottom: 52px;
+    padding-right: 34px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width : 414px) {
+  .all-plan-col {
+    margin-top: 0px;
+  }
+}

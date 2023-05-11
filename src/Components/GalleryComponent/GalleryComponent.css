@@ -4,6 +4,7 @@
 }
 .gallery-content {
   position: relative;
+  overflow: hidden;
 }
 .gallery-tile,
 .search-con {
@@ -24,6 +25,9 @@
 }
 .search-con img {
   width: auto;
+}
+.arr-img {
+  margin-left: -56px;
 }
 .gallery-tile {
   background: #d61111;
@@ -428,4 +432,131 @@ section#troo-da-photo-gallery-section .row {
 }
 .photo-gallery .gallery-content {
   margin-bottom: 30px;
+}
+.photo-gallery-img img {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .troo-da-photo-gallery-section .arrow{
+    display: none;
+  }
+  .troo-da-photo-gallery-section .galleryHeading{
+    width: 50%;
+  }
+  .arr-img img {
+    width: 100%;
+    width: auto;
+    display: none;
+  }
+  .arr-img {
+    margin-left: -25px;
+  }
+  #kmacb {
+    display: none;
+  }
+  .logo-img img {
+    width: 100%;
+  }
+  .gallery-content.gallery-five {
+    margin-top: 33px;
+  }
+  .gallery-content.gallery-six {
+    margin-top: 79px;
+  }
+  .gallery-content.gallery-four {
+    margin-top: 78px;
+    margin-bottom: 0px;
+  }
+  .gallery-content.gallery-two {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .gallery-content:hover .gallery-tile {
+    opacity: 1;
+  }
+  .gallery-content .gallery-tile {
+    opacity: 1;
+    padding: 11px 23px;
+  }
+  .gallery-content.gallery-five {
+    margin-top: 0px;
+  }
+  .gallery-content.gallery-six {
+    margin-top: -143px;
+  }
+  .gallery-content.gallery-four {
+    margin-top: -143px;
+    margin-bottom: 30px;
+  }
+  .gallery-tile h3 {
+    color: #ffff;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .gallery-tile span {
+    margin-bottom: 5px;
+  }
+  .gallery-tile{
+    bottom: 0;
+    top: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .photo-gallery .gallery-content {
+    margin-bottom: 100px;
+  }
+  .photo-gallery-img img {
+    margin-bottom: 30px;
+  }
+  
+}
+@media (max-width : 767px) {
+  .troo-da-photo-gallery-section .galleryHeading{
+    width: 100%;
+  }
+  .arr-img {
+    margin-left: 0;
+    padding-bottom: 18px;
+  }
+  .gallery-content.gallery-five {
+    margin-top: 33px;
+  }
+  .gallery-content.gallery-six {
+    margin-top: 79px;
+  }
+  .gallery-content.gallery-four {
+    margin-top: 78px;
+    margin-bottom: 22px;
+  }
+  .gallery-content.gallery-two {
+    margin-top: 75px;
+    margin-bottom: 56px;
+  }
+  .gallery-content:hover .gallery-tile {
+    opacity: 1;
+  }
+  section#troo-da-photo-gallery-section .col-md-2 {
+    width: 50%;
+  }
+  section#troo-da-photo-gallery-section .circle-lg {
+    display: none;
+  }
+  .brand-logo h5 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .photo-gallery .gallery-content {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width : 414px) {
+  .brand-logo{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .auto-contetn h3 {
+    line-height: 30px;
+}
 }

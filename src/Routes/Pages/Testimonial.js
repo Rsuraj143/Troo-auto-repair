@@ -12,7 +12,7 @@ import useDocumentTitle from "../../PageTitle";
 const Testimonial = () => {
   useDocumentTitle("TRoo | Testimonials")
   return (
-    <div>
+    <div className="testimonial">
       <Header />
       <BannerGlobal />
       <ReviewComponent2/>

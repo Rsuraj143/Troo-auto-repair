@@ -36,7 +36,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 social">
               <div class="socail-icon">
               <ul>
                 <li><Link to="#"><FaFacebookF /></Link></li>

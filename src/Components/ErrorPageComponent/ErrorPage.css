@@ -59,3 +59,16 @@
   background: #1e1e1e;
   box-shadow: 0px 4px 35px rgb(214 17 17 / 10%);
 }
+
+@media (max-width : 767px) {
+  .error-section span {
+    font-size: 123.39px;
+  }
+  .error-section span img {
+    width: 100%;
+    max-width: 125px;
+  }
+  .error-section h2 {
+    font-size: 30px;
+  }
+}

@@ -14,7 +14,7 @@ import useDocumentTitle from "../../PageTitle";
 const Histery = () => {
   useDocumentTitle("TRoo | Company History")
   return (
-    <div>
+    <div className="history">
       <Header/>
       <BannerGlobal />
       <CompanHistaory/>

@@ -3,7 +3,7 @@ section#troo-da-whate-we-are-section {
   position: relative;
   overflow: hidden;
 }
-section#troo-da-whate-we-are-section a{
+section#troo-da-whate-we-are-section a {
   text-decoration: none;
 }
 section#troo-da-whate-we-are-section:before {
@@ -87,3 +87,28 @@ section#troo-da-whate-we-are-section:after {
   background: rgba(214, 17, 17, 0.05);
 }
 
+@media (max-width: 1500px) {
+  section#troo-da-whate-we-are-section:after {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  section#troo-da-whate-we-are-section:before {
+    display: none;
+  }
+  .ser-text h3 br {
+    display: none;
+  }
+  .ser-text h3 {
+    font-size: 18px;
+  }
+  .ser-img {
+    padding: 7px 11px;
+  }
+}
+
+@media (max-width : 767px) {
+  .ser-text h3 {
+    font-size: 19px;
+  }
+}

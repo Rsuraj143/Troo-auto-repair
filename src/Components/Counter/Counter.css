@@ -31,6 +31,7 @@
 .counter-box {
   display: flex;
   align-items: center;
+  justify-content: center;
   background: rgb(214 17 17 / 5%);
   padding-top: 61px;
   padding-bottom: 36px;
@@ -52,4 +53,36 @@ section.counter-section.padding-top.padding-bottom {
   max-width: 1406px;
   margin: -141px auto 0 auto;
   padding: 53px 0 53px 0;
+}
+
+@media (max-width: 1024px) {
+  .counter-box {
+    margin-bottom: 30px;
+    padding-top: 43px;
+    flex-wrap: wrap;
+    padding-left: 12px;
+  }
+  .counter-box strong {
+    font-size: 35px;
+  }
+  .counter-box span {
+    font-size: 35px;
+  }
+  .counter-number:after {
+    display: none;
+  }
+  .counter-text p {
+    font-size: 14px;
+  }
+  .counter-number {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .counter-text p {
+    font-size: 18px;
+  }
 }

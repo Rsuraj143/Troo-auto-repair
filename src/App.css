@@ -132,3 +132,67 @@ html {
   position: relative;
   overflow-x: hidden;
 }
+
+@media (max-width: 1024px) {
+  body h2 {
+    font-size: 33px;
+    line-height: 45px;
+  }
+  body h1 {
+    font-size: 45px;
+  }
+  .padding-bottom {
+    padding-bottom: 50px;
+  }
+  .padding-top {
+    padding-top: 50px;
+  }
+  body h4 {
+    font-size: 19px;
+  }
+}
+@media (max-width: 991px) {
+  body h1 {
+    font-size: 35px;
+    line-height: 44px;
+  }
+  .red-btn {
+    padding: 11px 13px;
+  }
+  .black-btn {
+    padding: 11px 13px;
+  }
+  .black-btn a {
+    font-size: 14px;
+  }
+  .red-btn a {
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  body h2 {
+    font-size: 33px;
+    line-height: 45px;
+  }
+}
+@media (max-width: 414px) {
+  body h1 {
+    font-size: 27px;
+    line-height: 40px;
+}
+.hero-text .title-txt h1 span {
+  font-size: 27px;
+  line-height: 40px;
+  margin-top: 0;
+}
+body h2 {
+  font-size: 26px;
+  line-height: 35px;
+}
+body h3{
+  font-size: 20px;
+  line-height: 30px;
+}
+}

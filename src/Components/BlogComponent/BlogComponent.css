@@ -1,7 +1,7 @@
 section#troo-da-blog-section {
   background: rgb(214 17 17 / 5%);
 }
-section#troo-da-blog-section a{
+section#troo-da-blog-section a {
   text-decoration: none;
 }
 .blog-content {
@@ -98,4 +98,13 @@ section#troo-da-blog-section a{
 }
 .blogs .auto-reapire {
   margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .blog-content {
+    margin-top: 30px;
+  }
+  .auto-reapire {
+    margin-top: 0;
+  }
 }

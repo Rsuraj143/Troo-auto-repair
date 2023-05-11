@@ -11,7 +11,7 @@ import useDocumentTitle from "../../PageTitle";
 const TeamDetails = () => {
   useDocumentTitle("TRoo | Team Details")
   return (
-    <div>
+    <div >
       <Header />
       <BannerGlobal />
       <TeamDetailsComponent />

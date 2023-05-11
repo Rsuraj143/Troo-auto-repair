@@ -3,12 +3,12 @@
   top: 42%;
 }
 .search-form button {
-    border: none;
-    background: #1E1E1E;
-    position: absolute;
-    top: 41px;
-    right: 0%;
-    padding: 18px 18px;
+  border: none;
+  background: #1e1e1e;
+  position: absolute;
+  top: 41px;
+  right: 0%;
+  padding: 18px 18px;
 }
 .coming-section {
   padding-left: 168px;
@@ -60,15 +60,15 @@
   margin: 0 auto;
 }
 .coming-soon-section .search-form {
-    max-width: inherit;
-    text-align: left;
-    margin: inherit !important;
+  max-width: inherit;
+  text-align: left;
+  margin: inherit !important;
 }
 .search-form p {
   margin-bottom: 15px;
 }
 .search-form {
-    position: relative
+  position: relative;
 }
 .coming-soon-section .socail-icon span {
   font-family: "Epilogue";
@@ -196,4 +196,60 @@
 }
 .coming-contact {
   padding-top: 45px;
+}
+
+@media (max-width: 1500px) {
+  .con-title:after {
+    position: absolute;
+    width: 117px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .con-title:after {
+    position: absolute;
+    width: 81px;
+  }
+  .con-img-col:after {
+    height: 389px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .coming-section:after {
+    display: none;
+  }
+  .coming-soon-section h1 {
+    font-size: 41px;
+    line-height: 48px;
+  }
+  .coming-contact a {
+    padding-right: 20px;
+    font-size: 23.1525px;
+    line-height: 11px;
+  }
+  .coming-soon-section:after {
+    display: none;
+  }
+  .con-img-col:after {
+    height: 326px;
+  }
+}
+
+@media (max-width: 991px) {
+  .search-form button {
+    right: 0%;
+  }
+
+  .coming-section:after {
+    display: none;
+  }
+  .con-title:after {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .search-form button{right: 0;}
 }

@@ -73,3 +73,12 @@ section#troo-da-company-journey-section {
 .company-history section#troo-da-about-section h1 {
   font-size: 30px;
 }
+
+@media (max-width : 767px) {
+  .company-journey-col {
+    padding-bottom: 46px;
+  }
+  .history section#troo-da-who-we-are-section.padding-top{
+    padding-top: 0;
+  }
+}

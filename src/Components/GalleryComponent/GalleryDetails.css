@@ -75,3 +75,27 @@ section#troo-da-photo-gallery-deatail-section .team-contact {
 .final-col p {
   margin-bottom: 37px;
 }
+.photo-gallery-deatail-img-col img {
+  width: 100%;
+}
+.photo-gallery .gallery-tile{
+  bottom: 0;
+  top: auto;
+}
+.final-imf img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+
+  section#troo-da-photo-gallery-deatail-section .team-contact ul li {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  section#troo-da-photo-gallery-deatail-section .team-contact {
+    margin-top: 0;
+    padding-top: 22px;
+    padding-bottom: 1px;
+  }
+}

@@ -147,3 +147,44 @@ figure.chat-icon {
 section#troo-da-clients-reviews-section .arr-img {
   margin-left: -15px;
 }
+
+@media (max-width: 1024px) {
+  .troo-da-clients-reviews-section .col-md-2{
+    display: none;
+  }
+  .troo-da-clients-reviews-section .col-md-4{
+    width: 50%;
+  }
+  .client-cricle {
+    display: none;
+  }
+  .clint-qute {
+    padding: 44px 36px;
+  }
+  .clint-qute span {
+    font-size: 82px;
+    line-height: 35px;
+    top: 0;
+    right: 21px;
+  }
+  .qute-icon img {
+    width: 100%;
+    max-width: 73px;
+  }
+}
+
+@media (max-width : 767px) {
+  .qute-icon {
+    display: none;
+  }
+  .troo-da-clients-reviews-section .col-md-4{
+    width: 100%;
+  }
+  .client-section{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .testimonial section#troo-da-clients-reviews-section{
+    padding-bottom: 0;
+  }
+}
