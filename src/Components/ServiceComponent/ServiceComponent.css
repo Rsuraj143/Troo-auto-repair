@@ -87,7 +87,7 @@ section#troo-da-whate-we-are-section:after {
   background: rgba(214, 17, 17, 0.05);
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1800px) {
   section#troo-da-whate-we-are-section:after {
     display: none;
   }

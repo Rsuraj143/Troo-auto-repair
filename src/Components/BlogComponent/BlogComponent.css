@@ -4,6 +4,9 @@ section#troo-da-blog-section {
 section#troo-da-blog-section a {
   text-decoration: none;
 }
+section#troo-da-blog-section .appoinment-section{
+  text-align: end;
+}
 .blog-content {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 24px 21px 19px 19px;
