@@ -9,34 +9,34 @@ import { BlogData } from "./BlogData";
 const BlogListComponent = () => {
   return (
     <section
-      class="troo-da-service-detail-section"
+      className="troo-da-service-detail-section"
       id="troo-da-service-detail-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8">
             {
               BlogData.slice(0,4).map((e,i)=>
               <Link to={`/Home/Blogs/Blog_Details?${createSearchParams({id : e.id})}`}>
-              <div class="blog-list-ss">
-              <div class="blog-img-col">
+              <div className="blog-list-ss">
+              <div className="blog-img-col">
                 <img src={e.img2} alt="bloglist1" />
-                <div class="date-col">
+                <div className="date-col">
                   <span>{e.date} </span>
                 </div>
               </div>
-              <div class="blog-list-text">
+              <div className="blog-list-text">
                 <p>{e.title} </p>
                 <h3>{e.name} </h3>
                 <p>
                   {e.para}
                 </p>
                 <Link href="#">Read More</Link>
-                <div class="blog-writer">
-                  <div class="blog-wri-img">
+                <div className="blog-writer">
+                  <div className="blog-wri-img">
                     <img src={e.writterImg} alt="blogAuthor1" />
                   </div>
-                  <div class="blog-wri-text">
+                  <div className="blog-wri-text">
                     <span>Published by</span>
                     <strong>{e.writterName} </strong>
                   </div>
@@ -48,10 +48,10 @@ const BlogListComponent = () => {
             }
       
           </div>
-          <div class="col-md-4">
-            <div class="sidebar">
-              <div class="cat-tile">Categories</div>
-              <div class="services-list">
+          <div className="col-md-4">
+            <div className="sidebar">
+              <div className="cat-tile">Categories</div>
+              <div className="services-list">
                 <ul>
                   <li>
                     <Link href="#"> Fluid </Link>
@@ -87,30 +87,30 @@ const BlogListComponent = () => {
                   </li>
                 </ul>
               </div>
-              <div class="services-contact">
+              <div className="services-contact">
                 <h3>Contacts</h3>
-                <div class="serdes-call">
-                  <div class="ser-deals-cllimg">
+                <div className="serdes-call">
+                  <div className="ser-deals-cllimg">
                     <img src={location} alt="location" />
                   </div>
-                  <div class="ser-deals-clltxt">
+                  <div className="ser-deals-clltxt">
                     <span>98 Lancaster Court Poughkeepsie, NY 12601</span>
                   </div>
                 </div>
-                <div class="serdes-call">
-                  <div class="ser-deals-cllimg">
+                <div className="serdes-call">
+                  <div className="ser-deals-cllimg">
                     <img src={call} alt="call" />
                   </div>
-                  <div class="ser-deals-clltxt">
+                  <div className="ser-deals-clltxt">
                     <p>Call Us on</p>
                     <span>+44 123 456 7890</span>
                   </div>
                 </div>
-                <div class="serdes-call">
-                  <div class="ser-deals-cllimg">
+                <div className="serdes-call">
+                  <div className="ser-deals-cllimg">
                     <img src={mail} alt="mail" />
                   </div>
-                  <div class="ser-deals-clltxt">
+                  <div className="ser-deals-clltxt">
                     <p>Email Us on</p>
                     <span>example@email.com</span>
                   </div>

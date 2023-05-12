@@ -5,16 +5,16 @@ import Accordion from "react-bootstrap/Accordion";
 const FAQComponent2 = () => {
   return (
     <section
-      class="troo-da-faq-client-section padding-top padding-bottom"
+      className="troo-da-faq-client-section padding-top padding-bottom"
       id="troo-da-faq-client-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="faq-tile">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="faq-tile">
               <h3>General Questions</h3>
             </div>
-            <div class="accordion-section">
+            <div className="accordion-section">
               <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
@@ -105,11 +105,11 @@ const FAQComponent2 = () => {
               </Accordion>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="faq-tile">
+          <div className="col-md-6">
+            <div className="faq-tile">
               <h3>About Services</h3>
             </div>
-            <div class="accordion-section">
+            <div className="accordion-section">
               <Accordion>
                 <Accordion.Item eventKey="8">
                   <Accordion.Header>
@@ -212,9 +212,9 @@ const FAQComponent2 = () => {
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="ans-col">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="ans-col">
               <h3>Didn’t Find Answer?</h3>
               <span>
                 Contact Us On:{" "}

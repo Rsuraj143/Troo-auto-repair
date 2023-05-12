@@ -5,7 +5,7 @@ import useDocumentTitle from '../../PageTitle'
 const CommingSoon = () => {
   useDocumentTitle("TRoo | Comming Soon")
   return (
-    <div class="coming-soon">
+    <div className="coming-soon">
       <CommingSoonComponent/>
     </div>
   )

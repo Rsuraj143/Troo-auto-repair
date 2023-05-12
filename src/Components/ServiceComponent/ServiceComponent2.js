@@ -8,26 +8,26 @@ import { ServiceData } from "./ServiceData";
 const ServiceComponent2 = () => {
   return (
     <section
-      class="troo-da-whate-we-are-section padding-top padding-bottom"
+      className="troo-da-whate-we-are-section padding-top padding-bottom"
       id="troo-da-whate-we-are-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="title-txt">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-5">
+            <div className="title-txt">
               <span>What We Do</span>
               <h2>
                 We Provide Best<strong>Auto Repair Services</strong>
               </h2>
             </div>
           </div>
-          <div class="col-md-2">
-            <div class="arr-img">
+          <div className="col-md-2">
+            <div className="arr-img">
               <img src={arrow} alt="arrow" />
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="what-text">
+          <div className="col-md-5">
+            <div className="what-text">
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard.
@@ -38,23 +38,23 @@ const ServiceComponent2 = () => {
             </div>
           </div>
         </div>
-        <div class="row">
+        <div className="row">
           {ServiceData.slice(0, 3).map((e, i) => (
-            <div class="col-md-4">
+            <div className="col-md-4">
               <Link
                 to={`/Home/Our_Services/Service_Details?${createSearchParams({
                   id: e.id,
                 })}`}
               >
-                <div class="services-section">
-                  <div class="serv-main">
+                <div className="services-section">
+                  <div className="serv-main">
                     <img src={e.img} alt="service1" />
                   </div>
-                  <div class="services-text">
-                    <div class="ser-text">
+                  <div className="services-text">
+                    <div className="ser-text">
                       <h3>{e.name}</h3>
                     </div>
-                    <div class="ser-img">
+                    <div className="ser-img">
                       <img src={e.arrow} alt="WhtArrow" />
                     </div>
                   </div>
@@ -63,23 +63,23 @@ const ServiceComponent2 = () => {
             </div>
           ))}
         </div>
-        <div class="row">
+        <div className="row">
           {ServiceData.slice(3, 6).map((e, i) => (
-            <div class="col-md-4">
+            <div className="col-md-4">
               <Link
                 to={`/Home/Our_Services/Service_Details?${createSearchParams({
                   id: e.id,
                 })}`}
               >
-                <div class="services-section">
-                  <div class="serv-main">
+                <div className="services-section">
+                  <div className="serv-main">
                     <img src={e.img} alt="service1" />
                   </div>
-                  <div class="services-text">
-                    <div class="ser-text">
+                  <div className="services-text">
+                    <div className="ser-text">
                       <h3>{e.name}</h3>
                     </div>
-                    <div class="ser-img">
+                    <div className="ser-img">
                       <img src={e.arrow} alt="WhtArrow" />
                     </div>
                   </div>
@@ -88,23 +88,23 @@ const ServiceComponent2 = () => {
             </div>
           ))}
         </div>
-        <div class="row">
+        <div className="row">
           {ServiceData.slice(6, 9).map((e, i) => (
-            <div class="col-md-4">
+            <div className="col-md-4">
               <Link
                 to={`/Home/Our_Services/Service_Details?${createSearchParams({
                   id: e.id,
                 })}`}
               >
-                <div class="services-section">
-                  <div class="serv-main">
+                <div className="services-section">
+                  <div className="serv-main">
                     <img src={e.img} alt="service1" />
                   </div>
-                  <div class="services-text">
-                    <div class="ser-text">
+                  <div className="services-text">
+                    <div className="ser-text">
                       <h3>{e.name}</h3>
                     </div>
-                    <div class="ser-img">
+                    <div className="ser-img">
                       <img src={e.arrow} alt="WhtArrow" />
                     </div>
                   </div>

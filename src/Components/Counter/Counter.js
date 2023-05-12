@@ -6,12 +6,12 @@ import ScrollTrigger from "react-scroll-trigger";
 const Counter = () => {
   const [counter, setCounter] = useState(false);
   return (
-    <section class="counter-section padding-top padding-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="counter-box">
-              <div class="counter-number">
+    <section className="counter-section padding-top padding-bottom">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-3">
+            <div className="counter-box">
+              <div className="counter-number">
                 <ScrollTrigger
                   onEnter={() => setCounter(true)}
                   onExit={() => setCounter(false)}
@@ -23,14 +23,14 @@ const Counter = () => {
                   <strong>+</strong>
                 </ScrollTrigger>
               </div>
-              <div class="counter-text">
+              <div className="counter-text">
                 <p>Total Year of Experience</p>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="counter-box">
-              <div class="counter-number">
+          <div className="col-md-3">
+            <div className="counter-box">
+              <div className="counter-number">
                 <ScrollTrigger
                   onEnter={() => setCounter(true)}
                   onExit={() => setCounter(false)}
@@ -42,14 +42,14 @@ const Counter = () => {
                   <strong>%</strong>
                 </ScrollTrigger>
               </div>
-              <div class="counter-text">
+              <div className="counter-text">
                 <p>Return to Work With Us</p>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="counter-box">
-              <div class="counter-number">
+          <div className="col-md-3">
+            <div className="counter-box">
+              <div className="counter-number">
                 <ScrollTrigger
                   onEnter={() => setCounter(true)}
                   onExit={() => setCounter(false)}
@@ -61,14 +61,14 @@ const Counter = () => {
                   <strong>+</strong>
                 </ScrollTrigger>
               </div>
-              <div class="counter-text">
+              <div className="counter-text">
                 <p>Type Services We Provide</p>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="counter-box">
-              <div class="counter-number">
+          <div className="col-md-3">
+            <div className="counter-box">
+              <div className="counter-number">
                 <ScrollTrigger
                   onEnter={() => setCounter(true)}
                   onExit={() => setCounter(false)}
@@ -80,7 +80,7 @@ const Counter = () => {
                   <strong>+</strong>
                 </ScrollTrigger>
               </div>
-              <div class="counter-text">
+              <div className="counter-text">
                 <p>We Have Expert Mechanic</p>
               </div>
             </div>

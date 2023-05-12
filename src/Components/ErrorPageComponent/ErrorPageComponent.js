@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 
 const ErrorPageComponent = () => {
   return (
-    <section class="troo-da-error-section" id="troo-da-error-section">
-      <div class="container">
-        <div class="row">
-          <div class="error-section">
+    <section className="troo-da-error-section" id="troo-da-error-section">
+      <div className="container">
+        <div className="row">
+          <div className="error-section">
             <span>
               4<img src={tire1} alt="tire1" />4
             </span>
@@ -19,12 +19,12 @@ const ErrorPageComponent = () => {
               The page you are looking for was moved, removed,
               <br /> renamed or never existed.
             </p>
-            <div class="search-form">
-              <div class="form-outline">
+            <div className="search-form">
+              <div className="form-outline">
                 <input
                   type="search"
                   id="form1"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Search"
                 />
               </div>
@@ -32,7 +32,7 @@ const ErrorPageComponent = () => {
                 <img src={search} alt="search" />
               </button>
             </div>
-            <div class="appoinment-section">
+            <div className="appoinment-section">
               {" "}
               <Link to="/">
                 Take Me Home

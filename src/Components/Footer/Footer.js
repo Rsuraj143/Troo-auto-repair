@@ -13,21 +13,21 @@ const Footer = () => {
   return (
     <div>
       <section
-        class="troo-da-footer-deails-section"
+        className="troo-da-footer-deails-section"
         id="troo-da-footer-deails-section"
       >
-        <div class="footer-vert-move">
+        <div className="footer-vert-move">
           <img src={trend} alt="trend" />
         </div>
-        <div class="container">
-          <div class="row foter-row">
-            <div class="col-md-3">
-              <div class="footer-logo">
+        <div className="container">
+          <div className="row foter-row">
+            <div className="col-md-3">
+              <div className="footer-logo">
                 <img src={logo} alt="logo" />
               </div>
             </div>
-            <div class="col-md-7">
-              <div class="footer-text">
+            <div className="col-md-7">
+              <div className="footer-text">
                 <p>
                   Lörem ipsum od ohet dilogi. Bell trabel, samuligt, ohöbel utom
                   diska. Jinesade bel när feras redorade i belogi. FAR paratyp i
@@ -36,8 +36,8 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div class="col-md-2 social">
-              <div class="socail-icon">
+            <div className="col-md-2 social">
+              <div className="socail-icon">
               <ul>
                 <li><Link to="#"><FaFacebookF /></Link></li>
                 <li><Link to="#"><FaTwitter /></Link></li>
@@ -47,38 +47,38 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="location">
-                <div class="footer-hd">Our Location</div>
-                <div class="footer-con">
-                  <div class="icon-im">
+          <div className="row">
+            <div className="col-md-3">
+              <div className="location">
+                <div className="footer-hd">Our Location</div>
+                <div className="footer-con">
+                  <div className="icon-im">
                     <img src={location} alt="location" />
                   </div>
-                  <div class="loc-txt">
+                  <div className="loc-txt">
                     98 Lancaster Court Poughkeepsie, NY 12601
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-5 cont-ss">
-              <div class="location Contact-col">
-                <div class="footer-hd">Contact With Us</div>
-                <div class="call-desils">
-                  <div class="footer-con">
-                    <div class="icon-im">
+            <div className="col-md-5 cont-ss">
+              <div className="location Contact-col">
+                <div className="footer-hd">Contact With Us</div>
+                <div className="call-desils">
+                  <div className="footer-con">
+                    <div className="icon-im">
                       <img src={call} alt="call" />
                     </div>
-                    <div class="loc-txt">
+                    <div className="loc-txt">
                       <span>Call Us on</span>
                       <a href="tel:+44 123 456 7890">+44 123 456 7890</a>
                     </div>
                   </div>
-                  <div class="footer-con">
-                    <div class="icon-im">
+                  <div className="footer-con">
+                    <div className="icon-im">
                       <img src={mail} alt="mail" />
                     </div>
-                    <div class="loc-txt">
+                    <div className="loc-txt">
                       <span>Email Us on</span>
                       <a href="mailto:example@email.com">example@email.com</a>
                     </div>
@@ -86,9 +86,9 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div class="col-md-2">
-              <div class="foot-lin left-cc">
-                <div class="lin-hd">Pages</div>
+            <div className="col-md-2">
+              <div className="foot-lin left-cc">
+                <div className="lin-hd">Pages</div>
                 <ul>
                   <li>
                     <Link href="#">About Us</Link>
@@ -105,9 +105,9 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div class="col-md-2">
-              <div class="foot-lin">
-                <div class="lin-hd">Services</div>
+            <div className="col-md-2">
+              <div className="foot-lin">
+                <div className="lin-hd">Services</div>
                 <ul>
                   <li>
                     <Link href="#">Tire Services</Link>
@@ -125,17 +125,17 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="row bottom-border">
-            <div class="col-md-6">
-              <div class="bottom-footer">
+          <div className="row bottom-border">
+            <div className="col-md-6">
+              <div className="bottom-footer">
                 <p>
                   Copyright © 2022. <span>TRoothemes</span>. All rights
                   reserved.
                 </p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="bootom-footer-links">
+            <div className="col-md-6">
+              <div className="bootom-footer-links">
                 <ul>
                   <li>
                     <Link href="#">Terms & Conditions</Link>
@@ -148,7 +148,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="footer-cr">
+        <div className="footer-cr">
           <img src={tire} alt="tire" />
         </div>
       </section>

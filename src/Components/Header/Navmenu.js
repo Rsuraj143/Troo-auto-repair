@@ -1,47 +1,55 @@
-import React from 'react'
-import "./Header.css"
-import { Dropdown, DropdownButton } from 'react-bootstrap';
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import "./Header.css";
+import { NavLink, useLocation } from "react-router-dom";
+import { BsPlus } from "react-icons/bs";
 
 const Navmenu = ({ item }) => {
-    const location = useLocation();
-    const navigate = useNavigate();
-    let arr = location.pathname?.split("/");
-    let lastvalue = arr[arr.length - 1].trim().replace(/_/g, " ");
-    let filt = item.subNav?.find((s)=>s.subTitle === lastvalue)
+  const [showcat, setShowCat] = useState(false);
+  const location = useLocation();
+  let arr = location.pathname?.split("/");
+  let lastvalue = arr[arr.length - 1].trim().replace(/_/g, " ");
+  let filt = item.subNav?.find((s) => s.subTitle === lastvalue);
   return (
     <>
-      <li className={item.title === lastvalue || filt  ?"nav-item active" : "nav-item"}>
+      <li
+        className={
+          item.title === lastvalue || filt ? "nav-item active" : "nav-item"
+        }
+      >
         {!item?.subNav ? (
-          <NavLink
-            className="nav-link"
-            to={item.path}
-          >
+          <NavLink className="nav-link" to={item.path}>
             <div>{item.title}</div>
           </NavLink>
         ) : (
-          <DropdownButton
-            className="nav-link test"
-            id="dropdown-basic-button"
-            title={item.title}
+          <NavLink
+            onMouseEnter={() => setShowCat(true)}
+            onMouseLeave={() => setShowCat(false)}
+            className="nav-link"
           >
-            {item.subNav.map((item, i) => {
-            
-              return (
-                <Dropdown.Item
-                  key={i}
-                  className={item.subTitle === lastvalue ? "active" : " "}
-                  onClick={() => {navigate(item.path) }}
-                >
-                  {item.subTitle}
-                </Dropdown.Item>
-              );
-            })}
-          </DropdownButton>
+            {item.title}
+            <BsPlus />
+            {showcat && (
+              <ul className="dropdownMenu">
+                {item.subNav.map((e, i) => {
+                  console.log(e.subTitle)
+                  return (
+                    <li key={i}>
+                      <NavLink
+                        className={e.subTitle === lastvalue ? "dropdownActive" : " "}
+                        to={e.path}
+                      >
+                        {e.subTitle}
+                      </NavLink>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </NavLink>
         )}
       </li>
     </>
-  )
-}
+  );
+};
 
-export default Navmenu
+export default Navmenu;

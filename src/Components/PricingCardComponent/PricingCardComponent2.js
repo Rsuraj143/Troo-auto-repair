@@ -4,521 +4,522 @@ import blackCheck from "../../Images/black-check.png";
 import whtArrow from "../../Images/white-arrow.png";
 import { Link } from "react-router-dom";
 import "./PricingCardComponent.css";
+import { FaStar } from 'react-icons/fa';
 
 const PricingCardComponent2 = () => {
   return (
     <section
-      class="troo-da-pricing-section padding-top padding-bottom"
+      className="troo-da-pricing-section padding-top padding-bottom"
       id="troo-da-pricing-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="prcing-col">
-              <div class="dot-move">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="prcing-col">
+              <div className="dot-move">
                 <img src={priDotes} alt="priDotes" />
               </div>
               <h3>Basic Package</h3>
-              <div class="pricing-ss">
+              <div className="pricing-ss">
                 <span>$</span>
                 <strong>39.00</strong>
                 <sub>/Per Service</sub>
               </div>
-              <div class="rating-start">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
+              <div className="rating-start">
+              <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
               </div>
-              <div class="ocean">
-                <div class="wave"></div>
+              <div className="ocean">
+                <div className="wave"></div>
               </div>
-              <div class="pricing-services">
+              <div className="pricing-services">
                 <ul>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Breaks repair</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Tires Replacement</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Transmission Service</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Diagnostic Service</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Batteries Replacement</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Engine Repair</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>12 Hours Full Support</span>
                   </li>
                 </ul>
               </div>
-              <div class="appoinment-section">
+              <div className="appoinment-section">
                 {" "}
                 <Link href="#">
                   Choose This Plan
                   <img src={whtArrow} alt="whtArrow" />
                 </Link>
               </div>
-              <div class="small-dot"></div>
-              <div class="radius">
-                <span class="border-animation ba2"></span>
+              <div className="small-dot"></div>
+              <div className="radius">
+                <span className="border-animation ba2"></span>
               </div>
-              <div class="dot-move rigth-col">
+              <div className="dot-move rigth-col">
                 <img src={priDotes} alt="pridote" />
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="prcing-col standard-package">
-              <div class="standard-col">
+          <div className="col-md-4">
+            <div className="prcing-col standard-package">
+              <div className="standard-col">
                 <span>Popular</span>
               </div>
-              <div class="dot-move">
+              <div className="dot-move">
                 <img src={priDotes} alt="pridote" />
               </div>
               <h3>Standard Package</h3>
-              <div class="pricing-ss">
+              <div className="pricing-ss">
                 <span>$</span>
                 <strong>59.00</strong>
                 <sub>/Per Service</sub>
               </div>
-              <div class="rating-start">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
+              <div className="rating-start">
+              <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
               </div>
-              <div class="ocean">
-                <div class="wave"></div>
+              <div className="ocean">
+                <div className="wave"></div>
               </div>
-              <div class="pricing-services">
+              <div className="pricing-services">
                 <ul>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Breaks repair</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Tires Replacement</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Transmission Service</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Diagnostic Service</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Batteries Replacement</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Engine Repair</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>12 Hours Full Support</span>
                   </li>
                 </ul>
               </div>
-              <div class="appoinment-section">
+              <div className="appoinment-section">
                 {" "}
                 <Link href="#">
                   Choose This Plan
                   <img src={whtArrow} alt="whtArrow" />
                 </Link>
               </div>
-              <div class="small-dot"></div>
-              <div class="radius">
-                <span class="border-animation ba2"></span>
+              <div className="small-dot"></div>
+              <div className="radius">
+                <span className="border-animation ba2"></span>
               </div>
-              <div class="dot-move rigth-col">
+              <div className="dot-move rigth-col">
                 <img src={priDotes} alt="pridote" />
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="prcing-col gold-ss">
-              <div class="dot-move">
+          <div className="col-md-4">
+            <div className="prcing-col gold-ss">
+              <div className="dot-move">
                 <img src={priDotes} alt="pridote" />
               </div>
               <h3>Golden Package</h3>
-              <div class="pricing-ss">
+              <div className="pricing-ss">
                 <span>$</span>
                 <strong>89.00</strong>
                 <sub>/Per Service</sub>
               </div>
-              <div class="rating-start">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
+              <div className="rating-start">
+              <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
               </div>
-              <div class="ocean">
-                <div class="wave"></div>
+              <div className="ocean">
+                <div className="wave"></div>
               </div>
-              <div class="pricing-services">
+              <div className="pricing-services">
                 <ul>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Breaks repair</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Tires Replacement</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Transmission Service</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Diagnostic Service</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Batteries Replacement</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Engine Repair</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>12 Hours Full Support</span>
                   </li>
                 </ul>
               </div>
-              <div class="appoinment-section">
+              <div className="appoinment-section">
                 {" "}
                 <Link href="#">
                   Choose This Plan
                   <img src={whtArrow} alt="whtArrow" />
                 </Link>
               </div>
-              <div class="small-dot"></div>
-              <div class="radius">
-                <span class="border-animation ba2"></span>
+              <div className="small-dot"></div>
+              <div className="radius">
+                <span className="border-animation ba2"></span>
               </div>
-              <div class="dot-move rigth-col">
+              <div className="dot-move rigth-col">
                 <img src={priDotes} alt="pridote" />
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-md-4">
-            <div class="prcing-col standard-package">
-              <div class="standard-col">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="prcing-col standard-package">
+              <div className="standard-col">
                 <span>Popular</span>
               </div>
-              <div class="dot-move">
+              <div className="dot-move">
                 <img src={priDotes} alt="pridote" />
               </div>
               <h3>Personal Package</h3>
-              <div class="pricing-ss">
+              <div className="pricing-ss">
                 <span>$</span>
                 <strong>39.00</strong>
                 <sub>/Per Service</sub>
               </div>
-              <div class="rating-start">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
+              <div className="rating-start">
+              <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
               </div>
-              <div class="ocean">
-                <div class="wave"></div>
+              <div className="ocean">
+                <div className="wave"></div>
               </div>
-              <div class="pricing-services">
+              <div className="pricing-services">
                 <ul>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Breaks repair</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Tires Replacement</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Transmission Service</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Diagnostic Service</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Batteries Replacement</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Engine Repair</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>12 Hours Full Support</span>
                   </li>
                 </ul>
               </div>
-              <div class="appoinment-section">
+              <div className="appoinment-section">
                 {" "}
                 <Link href="#">
                   Choose This Plan
                   <img src={whtArrow} alt="whtArrow" />
                 </Link>
               </div>
-              <div class="small-dot"></div>
-              <div class="radius">
-                <span class="border-animation ba2"></span>
+              <div className="small-dot"></div>
+              <div className="radius">
+                <span className="border-animation ba2"></span>
               </div>
-              <div class="dot-move rigth-col">
+              <div className="dot-move rigth-col">
                 <img src={priDotes} alt="pridote" />
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="prcing-col">
-              <div class="dot-move">
+          <div className="col-md-4">
+            <div className="prcing-col">
+              <div className="dot-move">
                 <img src={priDotes} alt="pridote" />
               </div>
               <h3>Business Package</h3>
-              <div class="pricing-ss">
+              <div className="pricing-ss">
                 <span>$</span>
                 <strong>99.00</strong>
                 <sub>/Per Service</sub>
               </div>
-              <div class="rating-start">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
+              <div className="rating-start">
+              <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
               </div>
-              <div class="ocean">
-                <div class="wave"></div>
+              <div className="ocean">
+                <div className="wave"></div>
               </div>
-              <div class="pricing-services">
+              <div className="pricing-services">
                 <ul>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Breaks repair</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Tires Replacement</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Transmission Service</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Diagnostic Service</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Batteries Replacement</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Engine Repair</span>
                   </li>
-                  <li class="disable">
-                    <div class="checl-icon">
+                  <li className="disable">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>12 Hours Full Support</span>
                   </li>
                 </ul>
               </div>
-              <div class="appoinment-section">
+              <div className="appoinment-section">
                 {" "}
                 <Link href="#">
                   Choose This Plan
                   <img src={whtArrow} alt="whtArrow" />
                 </Link>
               </div>
-              <div class="small-dot"></div>
-              <div class="radius">
-                <span class="border-animation ba2"></span>
+              <div className="small-dot"></div>
+              <div className="radius">
+                <span className="border-animation ba2"></span>
               </div>
-              <div class="dot-move rigth-col">
+              <div className="dot-move rigth-col">
                 <img src={priDotes} alt="pridote" />
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="prcing-col gold-ss">
-              <div class="dot-move">
+          <div className="col-md-4">
+            <div className="prcing-col gold-ss">
+              <div className="dot-move">
                 <img src={priDotes} alt="pridote" />
               </div>
               <h3>Corporate Package</h3>
-              <div class="pricing-ss">
+              <div className="pricing-ss">
                 <span>$</span>
                 <strong>129.00</strong>
                 <sub>/Per Service</sub>
               </div>
-              <div class="rating-start">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
+              <div className="rating-start">
+              <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
+                <FaStar/>
               </div>
-              <div class="ocean">
-                <div class="wave"></div>
+              <div className="ocean">
+                <div className="wave"></div>
               </div>
-              <div class="pricing-services">
+              <div className="pricing-services">
                 <ul>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Breaks repair</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Tires Replacement</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Transmission Service</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Diagnostic Service</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Batteries Replacement</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>Engine Repair</span>
                   </li>
                   <li>
-                    <div class="checl-icon">
+                    <div className="checl-icon">
                       <img src={blackCheck} alt="blackCheck" />
                     </div>
                     <span>12 Hours Full Support</span>
                   </li>
                 </ul>
               </div>
-              <div class="appoinment-section">
+              <div className="appoinment-section">
                 {" "}
                 <Link href="#">
                   Choose This Plan
                   <img src={whtArrow} alt="whtArrow" />
                 </Link>
               </div>
-              <div class="small-dot"></div>
-              <div class="radius">
-                <span class="border-animation ba2"></span>
+              <div className="small-dot"></div>
+              <div className="radius">
+                <span className="border-animation ba2"></span>
               </div>
-              <div class="dot-move rigth-col">
+              <div className="dot-move rigth-col">
                 <img src={priDotes} alt="pridote" />
               </div>
             </div>

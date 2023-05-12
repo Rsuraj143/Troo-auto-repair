@@ -5,24 +5,24 @@ import vector from "../../Images/Vector 4.png"
 const HighLights = () => {
   return (
     <section
-      class="troo-da-why-choose-us-section padding-top padding-bottom"
+      className="troo-da-why-choose-us-section padding-top padding-bottom"
       id="troo-da-why-choose-us-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="why-chose-text">
-              <div class="waveWrapper waveAnimation">
-                <div class="waveWrapperInner bgMiddle">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="why-chose-text">
+              <div className="waveWrapper waveAnimation">
+                <div className="waveWrapperInner bgMiddle">
                   <div
-                    class="wave waveMiddle"
+                    className="wave waveMiddle"
                     style={{
                       background: `url(${vector})`,
                     }}
                   ></div>
                 </div>
               </div>
-              <div class="title-txt">
+              <div className="title-txt">
                 <span>Why Choose Us</span>
                 <h2>
                   Many Reason Our Clients
@@ -35,19 +35,19 @@ const HighLights = () => {
                 standard. Lorem Ipsum is simply dummy text and of the printing
                 and typesetting.
               </p>
-              <div class="why-call">
+              <div className="why-call">
                 <span>Call Us on</span>
                 <a href="tel:+44 123 456 7890 ">+44 123 456 7890 </a>
                 <span>or</span> <a href="contact.html">Contact Us</a>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="choose-list">
+          <div className="col-md-6">
+            <div className="choose-list">
               <ul>
                 <li>
-                  <div class="circle">01</div>
-                  <div class="choose-text">
+                  <div className="circle">01</div>
+                  <div className="choose-text">
                     <strong>Problem Solver</strong>
                     <p>
                       Contrary to popular belief, Lorem Ipsum is not simply
@@ -56,8 +56,8 @@ const HighLights = () => {
                   </div>
                 </li>
                 <li>
-                  <div class="circle">02</div>
-                  <div class="choose-text">
+                  <div className="circle">02</div>
+                  <div className="choose-text">
                     <strong>On Time Delivery</strong>
                     <p>
                       Contrary to popular belief, Lorem Ipsum is not simply
@@ -66,8 +66,8 @@ const HighLights = () => {
                   </div>
                 </li>
                 <li>
-                  <div class="circle">03</div>
-                  <div class="choose-text">
+                  <div className="circle">03</div>
+                  <div className="choose-text">
                     <strong>Services by Expert Engineer</strong>
                     <p>
                       Contrary to popular belief, Lorem Ipsum is not simply
@@ -76,8 +76,8 @@ const HighLights = () => {
                   </div>
                 </li>
                 <li>
-                  <div class="circle">04</div>
-                  <div class="choose-text">
+                  <div className="circle">04</div>
+                  <div className="choose-text">
                     <strong>100% Satisfaction Guarantee</strong>
                     <p>
                       Contrary to popular belief, Lorem Ipsum is not simply

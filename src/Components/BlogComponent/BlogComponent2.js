@@ -6,22 +6,22 @@ import { Link, createSearchParams } from "react-router-dom";
 const BlogComponent2 = () => {
   return (
     <section
-      class="troo-da-blog-section padding-top padding-bottom"
+      className="troo-da-blog-section padding-top padding-bottom"
       id="troo-da-blog-section"
     >
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           {BlogData.slice(0, 3).map((e, i) => (
-            <div class="col-md-4">
+            <div className="col-md-4">
               <Link to={`/Home/Blogs/Blog_Details?${createSearchParams({id : e.id})}`}>
-                <div class="auto-reapire">
+                <div className="auto-reapire">
                   <img src={e.img} alt="blog" />
-                  <div class="auto-contetn">
+                  <div className="auto-contetn">
                     <span>{e.title}</span>
                     <h3>{e.name} </h3>
-                    <div class="blog-dat">
+                    <div className="blog-dat">
                       <span>{e.date} </span>
-                      <div class="bl-img">
+                      <div className="bl-img">
                         <img src={e.arrow} alt="whtArrow" />
                       </div>
                     </div>
@@ -31,18 +31,18 @@ const BlogComponent2 = () => {
             </div>
           ))}
         </div>
-        <div class="row">
+        <div className="row">
           {BlogData.slice(3, 6).map((e, i) => (
-            <div class="col-md-4">
+            <div className="col-md-4">
               <Link to={`/Home/Blogs/Blog_Details?${createSearchParams({id : e.id})}`}>
-                <div class="auto-reapire">
+                <div className="auto-reapire">
                   <img src={e.img} alt="blog" />
-                  <div class="auto-contetn">
+                  <div className="auto-contetn">
                     <span>{e.title}</span>
                     <h3>{e.name} </h3>
-                    <div class="blog-dat">
+                    <div className="blog-dat">
                       <span>{e.date} </span>
-                      <div class="bl-img">
+                      <div className="bl-img">
                         <img src={e.arrow} alt="whtArrow" />
                       </div>
                     </div>
@@ -52,18 +52,18 @@ const BlogComponent2 = () => {
             </div>
           ))}
         </div>
-        <div class="row">
+        <div className="row">
           {BlogData.slice(6, 9).map((e, i) => (
-            <div class="col-md-4">
+            <div className="col-md-4">
               <Link to={`/Home/Blogs/Blog_Details?${createSearchParams({id : e.id})}`}>
-                <div class="auto-reapire">
+                <div className="auto-reapire">
                   <img src={e.img} alt="blog" />
-                  <div class="auto-contetn">
+                  <div className="auto-contetn">
                     <span>{e.title}</span>
                     <h3>{e.name} </h3>
-                    <div class="blog-dat">
+                    <div className="blog-dat">
                       <span>{e.date} </span>
-                      <div class="bl-img">
+                      <div className="bl-img">
                         <img src={e.arrow} alt="whtArrow" />
                       </div>
                     </div>

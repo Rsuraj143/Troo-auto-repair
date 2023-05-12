@@ -7,21 +7,21 @@ import { BlogData } from "./BlogData";
 const BlogComponent = () => {
   return (
     <section
-      class="troo-da-blog-section padding-top padding-bottom"
+      className="troo-da-blog-section padding-top padding-bottom"
       id="troo-da-blog-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="title-txt">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8">
+            <div className="title-txt">
               <span>Read Our Articles</span>
               <h2>
                 Stay Updeted with<strong>Our News and Blogs</strong>
               </h2>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="appoinment-section">
+          <div className="col-md-4">
+            <div className="appoinment-section">
               <Link to="/Home/Blogs">
                 Read All Blogs
                 <img src={whtArrow} alt="whtArrow" />
@@ -29,8 +29,8 @@ const BlogComponent = () => {
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
+        <div className="row">
+          <div className="col-md-4">
             {BlogData.slice(1, 3).map((e, i) => (
               <Link
                 to={`/Home/Blogs/Blog_Details?${createSearchParams({
@@ -38,12 +38,12 @@ const BlogComponent = () => {
                 })}`}
                 key={i}
               >
-                <div class="blog-content">
+                <div className="blog-content">
                   <h3>{e.name}</h3>
                   <p>{e.title} </p>
-                  <div class="blog-dat">
+                  <div className="blog-dat">
                     <span>{e.date} </span>
-                    <div class="bl-img">
+                    <div className="bl-img">
                       <img src={e.arrow} alt="whtArrow" />
                     </div>
                   </div>
@@ -51,7 +51,7 @@ const BlogComponent = () => {
               </Link>
             ))}
           </div>
-          <div class="col-md-4">
+          <div className="col-md-4">
             {BlogData.slice(0, 1).map((e, i) => (
               <Link
                 to={`/Home/Blogs/Blog_Details?${createSearchParams({
@@ -59,14 +59,14 @@ const BlogComponent = () => {
                 })}`}
                 key={i}
               >
-                <div class="auto-reapire">
+                <div className="auto-reapire">
                   <img src={e.img} alt="img" />
-                  <div class="auto-contetn">
+                  <div className="auto-contetn">
                     <span>{e.title} </span>
                     <h3>{e.name} </h3>
-                    <div class="blog-dat">
+                    <div className="blog-dat">
                       <span>{e.date} </span>
-                      <div class="bl-img">
+                      <div className="bl-img">
                         <img src={e.arrow} alt="whtArrow" />
                       </div>
                     </div>
@@ -75,7 +75,7 @@ const BlogComponent = () => {
               </Link>
             ))}
           </div>
-          <div class="col-md-4">
+          <div className="col-md-4">
             {BlogData.slice(4, 6).map((e, i) => (
               <Link
                 to={`/Home/Blogs/Blog_Details?${createSearchParams({
@@ -83,12 +83,12 @@ const BlogComponent = () => {
                 })}`}
                 key={i}
               >
-                <div class="blog-content">
+                <div className="blog-content">
                   <h3>{e.name} </h3>
                   <p>{e.title} </p>
-                  <div class="blog-dat">
+                  <div className="blog-dat">
                     <span>{e.date} </span>
-                    <div class="bl-img">
+                    <div className="bl-img">
                       <img src={e.arrow} alt="whtArrow" />
                     </div>
                   </div>

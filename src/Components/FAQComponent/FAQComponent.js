@@ -6,13 +6,13 @@ import Accordion from "react-bootstrap/Accordion";
 const FAQComponent = () => {
   return (
     <section
-      class="troo-da-faq-section padding-top padding-bottom"
+      className="troo-da-faq-section padding-top padding-bottom"
       id="troo-da-faq-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title-txt">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="title-txt">
               <span>FAQ’s</span>
               <h2>
                 Have You Any Questions?
@@ -21,9 +21,9 @@ const FAQComponent = () => {
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-7">
-            <div class="accordion-section">
+        <div className="row">
+          <div className="col-md-7">
+            <div className="accordion-section">
               <Accordion>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
@@ -114,19 +114,19 @@ const FAQComponent = () => {
               </Accordion>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="red-faq-col">
+          <div className="col-md-5">
+            <div className="red-faq-col">
               <h3>Didn’t Find Answer?</h3>
               <p>
                 Check Our <strong>All FAQ’s</strong>
               </p>
               <span>OR</span>
-              <div class="fqa-linkss">
+              <div className="fqa-linkss">
                 <span>Contact Us On: </span>
                 <a href="tel:+44 123 456 7890">+44 123 456 7890</a>
               </div>
             </div>
-            <div class="faq-img-ss">
+            <div className="faq-img-ss">
               <img src={faq} alt="faq" />
             </div>
           </div>

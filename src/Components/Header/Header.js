@@ -31,14 +31,14 @@ const Header = () => {
       },[])
   return (
     <header >
-      <section class="troo-da-header-section" id="troo-da-header-section">
-        <div class="vert-move">
+      <section className="troo-da-header-section" id="troo-da-header-section">
+        <div className="vert-move">
           <img src={dot} alt="dot" />
         </div>
-        <div class="container ">
-          <div class="row addressNav" >
-            <div class="col-md-3">
-              <div class="socail-icon">
+        <div className="container ">
+          <div className="row addressNav" >
+            <div className="col-md-3">
+              <div className="socail-icon">
               <ul>
                 <li><Link to="#"><FaFacebookF /></Link></li>
                 <li><Link to="#"><FaTwitter /></Link></li>
@@ -47,24 +47,24 @@ const Header = () => {
               </ul>
               </div>
             </div>
-            <div class="col-md-9">
-              <div class="call-section">
-                <div class="call-ss">
-                  <div class="call-img">
+            <div className="col-md-9">
+              <div className="call-section">
+                <div className="call-ss">
+                  <div className="call-img">
                     <img src={call} alt="call" />
                   </div>
-                  <div class="call-text">
+                  <div className="call-text">
                     <span>Call Us on</span>
                     <strong>
                       <a href="tel:+44 123 456 7890">+44 123 456 7890</a>
                     </strong>
                   </div>
                 </div>
-                <div class="call-ss">
-                  <div class="call-img">
+                <div className="call-ss">
+                  <div className="call-img">
                     <img src={mail} alt="mail" />
                   </div>
-                  <div class="call-text">
+                  <div className="call-text">
                     <span>Email Us on</span>
                     <strong>
                       <a href="mailto:trooautorepair@email.com">

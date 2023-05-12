@@ -342,6 +342,12 @@ section#troo-da-footer-deails-section .socail-icon ul {
   }
 }
 @media (max-width: 767px) {
+  .call-desils{
+    justify-content: space-between;
+  }
+  .location.Contact-col{
+    max-width: 100%;
+  }
   .fooetr-red-box span {
     font-size: 25px;
     line-height: 34px;

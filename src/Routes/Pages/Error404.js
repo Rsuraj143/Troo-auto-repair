@@ -5,7 +5,7 @@ import useDocumentTitle from '../../PageTitle'
 const Error404 = () => {
   useDocumentTitle("TRoo | ErrorPage")
   return (
-    <div class="error">
+    <div className="error">
       <ErrorPageComponent/>
     </div>
   )

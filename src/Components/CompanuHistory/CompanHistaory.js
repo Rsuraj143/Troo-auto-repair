@@ -5,14 +5,14 @@ import check from "../../Images/check.png";
 const CompanHistaory = () => {
   return (
     <section
-      class="troo-da-who-we-are-section  padding-top padding-bottom"
+      className="troo-da-who-we-are-section  padding-top padding-bottom"
       id="troo-da-who-we-are-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="who-we-text">
-              <div class="title-txt">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-7">
+            <div className="who-we-text">
+              <div className="title-txt">
                 <span>Our History</span>
                 <h2>
                   Williams and Janny Founded The
@@ -28,8 +28,8 @@ const CompanHistaory = () => {
               </p>
             </div>
           </div>
-          <div class="col-md-5">
-            <div class="company-histry-text">
+          <div className="col-md-5">
+            <div className="company-histry-text">
               <h3>
                 Lorem Ipsum is simply dummy text of the printing and is
                 typesetting industry.

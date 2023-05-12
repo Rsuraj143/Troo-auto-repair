@@ -17,29 +17,29 @@ const VideoSection = () => {
   };
   return (
     <section
-      class="troo-da-video-section padding-top padding-bottom"
+      className="troo-da-video-section padding-top padding-bottom"
       id="troo-da-video-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 left">
-            <div class="video-text">
-              <div class="title-txt">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 left">
+            <div className="video-text">
+              <div className="title-txt">
                 <span>How Can We Help You</span>
                 <h2>
                   Now Better Auto Services<strong>Anytime - Anywhere</strong>
                 </h2>
               </div>
-              <div class="appoinment-section">
+              <div className="appoinment-section">
                 <Link to="/Home/Make_An_Appointment">
                   Make an Appointment <img src={whtArrow} alt="whtArrow" />
                 </Link>
               </div>
             </div>
           </div>
-          <div class="col-md-6 right">
+          <div className="col-md-6 right">
             <button
-              class="video-circle"
+              className="video-circle"
               onClick={openModal}
             >
               <img src={paly} alt="paly" />

@@ -40,10 +40,10 @@
   margin-top: 23px;
   margin-left: 8px;
 }
-.rating-start i {
+.rating-start svg {
   color: #f6961b;
 }
-.rating-start i:last-child {
+.rating-start svg:last-child {
   color: #dddddd;
 }
 .rating-start {

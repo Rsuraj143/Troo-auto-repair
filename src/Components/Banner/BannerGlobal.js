@@ -71,16 +71,16 @@ const BannerGlobal = () => {
   }, [location]);
 
   return (
-    <section class="troo-da-global-section" id="troo-da-global-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="hero-text">
-              <figure class="swing">
+    <section className="troo-da-global-section" id="troo-da-global-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="hero-text">
+              <figure className="swing">
                 <img src={setting} alt="setting" />
               </figure>
-              <div class="title-txt">
-                <div class="breadcrumb-ss">
+              <div className="title-txt">
+                <div className="breadcrumb-ss">
                   <nav>
                     <ul className="breadcrumb">
                       {breadcrumbs.map((breadcrumb, index) => (
@@ -101,14 +101,14 @@ const BannerGlobal = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="global-image-section">
+          <div className="col-md-6">
+            <div className="global-image-section">
               <img src={aboutpage} alt="aboutpage" />
             </div>
           </div>
         </div>
       </div>
-      <div class="red-dot">
+      <div className="red-dot">
         <img src={redDot} alt="redDot" />
       </div>
     </section>

@@ -8,15 +8,15 @@ import dot from "../../Images/read-dots.png"
 
 const BannerComponent = () => {
   return (
-    <section class="troo-da-hero-section" id="troo-da-hero-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="hero-text">
-              <figure class="swing">
+    <section className="troo-da-hero-section" id="troo-da-hero-section">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="hero-text">
+              <figure className="swing">
                 <img src={setting} alt="setting" />
               </figure>
-              <div class="title-txt">
+              <div className="title-txt">
                 <span>Welcome to TRoo Themes</span>
                 <h1>
                   Honest,Quality Work <span>At Affordable Prices</span>
@@ -28,14 +28,14 @@ const BannerComponent = () => {
                 text ever since the 1500s, when an unknown printer took a
                 galley.
               </p>
-              <div class="btn-section">
-                <div class="appoinment-section">
+              <div className="btn-section">
+                <div className="appoinment-section">
                   <Link to="/Home/Contact_Us">
                     Contact Us
                     <img src={arrow} alt="arrow" />
                   </Link>
                 </div>
-                <div class="black-btn appoinment-section">
+                <div className="black-btn appoinment-section">
                   <Link to="/Home/Our_Services">
                     View All Services
                     <img src={blackArrow} alt="blackArrow" />
@@ -44,12 +44,12 @@ const BannerComponent = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="hero-image-section"></div>
+          <div className="col-md-6">
+            <div className="hero-image-section"></div>
           </div>
         </div>
       </div>
-      <div class="red-dot">
+      <div className="red-dot">
         <img src={dot} alt="dot" />
       </div>
     </section>

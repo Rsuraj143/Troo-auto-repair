@@ -13,19 +13,19 @@ import "./ServiceDetails.css";
 const ServiceDetailsComponent = () => {
   return (
     <section
-      class="troo-da-service-detail-section"
+      className="troo-da-service-detail-section"
       id="troo-da-service-detail-section"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="service-detail-content">
-              <div class="service-detils-img">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8">
+            <div className="service-detail-content">
+              <div className="service-detils-img">
                 <img src={serviceDetails} alt="serviceDetails" />
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="servi-text">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="servi-text">
                     <h3>Anti Lock Brake Servicing</h3>
                     <p>
                       There are many variations of passages of Lorem Ipsum
@@ -56,50 +56,50 @@ const ServiceDetailsComponent = () => {
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="feacher-section">
-                    <div class="number-ss">01</div>
-                    <div class="feachet-text">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="feacher-section">
+                    <div className="number-ss">01</div>
+                    <div className="feachet-text">
                       <span>Fast Service</span>
                       <p>
                         There are many variations of passages by injected humour
                       </p>
                     </div>
                   </div>
-                  <div class="feacher-section">
-                    <div class="number-ss">03</div>
-                    <div class="feachet-text">
+                  <div className="feacher-section">
+                    <div className="number-ss">03</div>
+                    <div className="feachet-text">
                       <span>Expert Team</span>
                       <p>
                         There are many variations of passages by injected humour
                       </p>
                     </div>
                   </div>
-                  <div class="feach-img">
+                  <div className="feach-img">
                     <img src={ese} alt="ese" />
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="feacher-section">
-                    <div class="number-ss">02</div>
-                    <div class="feachet-text">
+                <div className="col-md-6">
+                  <div className="feacher-section">
+                    <div className="number-ss">02</div>
+                    <div className="feachet-text">
                       <span>Award Winning</span>
                       <p>
                         There are many variations of passages by injected humour
                       </p>
                     </div>
                   </div>
-                  <div class="feacher-section">
-                    <div class="number-ss">04</div>
-                    <div class="feachet-text">
+                  <div className="feacher-section">
+                    <div className="number-ss">04</div>
+                    <div className="feachet-text">
                       <span>Secure Payments</span>
                       <p>
                         There are many variations of passages by injected humour
                       </p>
                     </div>
                   </div>
-                  <div class="ess-text">
+                  <div className="ess-text">
                     <h3>Essential Service</h3>
                     <p>
                       There are many variations of the in passages by injected
@@ -132,9 +132,9 @@ const ServiceDetailsComponent = () => {
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="accordion-section">
+              <div className="row">
+                <div className="col-md-12">
+                  <div className="accordion-section">
                     <Accordion>
                       <Accordion.Item eventKey="0">
                         <Accordion.Header>
@@ -230,8 +230,8 @@ const ServiceDetailsComponent = () => {
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="services-list">
+          <div className="col-md-4">
+            <div className="services-list">
               <ul>
                 <li>
                   <Link href="#"> Auto Glas Repair</Link>
@@ -289,30 +289,30 @@ const ServiceDetailsComponent = () => {
                 </li>
               </ul>
             </div>
-            <div class="services-contact">
+            <div className="services-contact">
               <h3>Contacts</h3>
-              <div class="serdes-call">
-                <div class="ser-deals-cllimg">
+              <div className="serdes-call">
+                <div className="ser-deals-cllimg">
                   <img src={location} alt="location" />
                 </div>
-                <div class="ser-deals-clltxt">
+                <div className="ser-deals-clltxt">
                   <span>98 Lancaster Court Poughkeepsie, NY 12601</span>
                 </div>
               </div>
-              <div class="serdes-call">
-                <div class="ser-deals-cllimg">
+              <div className="serdes-call">
+                <div className="ser-deals-cllimg">
                   <img src={call} alt="call" />
                 </div>
-                <div class="ser-deals-clltxt">
+                <div className="ser-deals-clltxt">
                   <p>Call Us on</p>
                   <span>+44 123 456 7890</span>
                 </div>
               </div>
-              <div class="serdes-call">
-                <div class="ser-deals-cllimg">
+              <div className="serdes-call">
+                <div className="ser-deals-cllimg">
                   <img src={mail} alt="mail" />
                 </div>
-                <div class="ser-deals-clltxt">
+                <div className="ser-deals-clltxt">
                   <p>Email Us on</p>
                   <span>example@email.com</span>
                 </div>

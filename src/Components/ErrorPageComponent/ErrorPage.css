@@ -71,4 +71,7 @@
   .error-section h2 {
     font-size: 30px;
   }
+  .error-section{
+    padding-top: 0;
+  }
 }
