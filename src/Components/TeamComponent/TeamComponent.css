@@ -172,7 +172,7 @@ section#troo-daexpert-section .appoinment-section {
 }
 .team-contact {
   background: #d61111;
-  max-width: 385px;
+  /* max-width: 385px; */
   padding: 24px 0 31px 19px;
   margin-top: 27px;
   background-image: url(../../Images/team-chat-Icon.png);
